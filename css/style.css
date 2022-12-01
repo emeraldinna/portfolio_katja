@@ -110,10 +110,6 @@ header {
     justify-content: space-around;    
 }
 
-.test-content .dots {
-    padding: 10px 0;
-}
-
 .test-content p {
     font-family: sans-serif;   
     font-size: 12px;
