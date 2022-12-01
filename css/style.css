@@ -32,10 +32,12 @@ header {
     /* border: 1px solid red; -test */
 }
 
-.container-menu .menu ul {
+.container-menu .menu ul,
+.container-menu .menu ul > a {
     display: flex;
     justify-content: space-between;
-    border: 1x solid blue; /* Не применяется */
+    align-items: center;
+    border: 1x solid blue; /* test - Не применяется */
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -191,7 +193,6 @@ header {
     width: 100%;
     background-color: #ededed;
     padding: 0.5rem 0.5rem; 
-
 }
 
 .container-footer .footer-upp .logo-footer img {
@@ -200,7 +201,7 @@ header {
 
 .footer-upp .footer-email {
     font-size: 14px;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 
 .footer-email a {
@@ -209,28 +210,42 @@ header {
     cursor: pointer;
 }
 
-.footer-upp .social h4 > span {
-    font-family: Helvetica, Arial,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: small;
-    padding-right: 8px;    
-}
-
-.footer-upp .social a > img {
-    padding-right: 5px;    
-} 
-
-.footer-upp .social h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .footer-upp .social {
     line-height: 1.8;
+}
+
+.footer-upp p {
+    line-height: 2.3;    
 }
 
 .icon {
     width: 12px;
     height: 12px;
+    padding-right: 7px;;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social h4 {
+    padding-right: 10px;
+    font-family: Helvetica, Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: small;
+}
+
+.wrapper-social-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.wrapper-social-icon ul {
+    display: flex;
+    list-style: none;
 }
