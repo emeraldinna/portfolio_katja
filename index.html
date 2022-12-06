@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="interior design, designer, portfolio, katja karling">
     <meta name="description" content="portfolio site katja karling">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Katja Karling</title>
 </head>
 
 <body>
     <header>
         <div class="container-nav">
-            <div class="logo"> 
+            <div class="logo">
                 <a href="#">
                     <img src="/assets/logo.name.svg">
                 </a>
@@ -29,119 +30,118 @@
                     <li>
                         <a href="#">
                             <img src="/assets/mail_FILL0_wght400_GRAD0_opsz20.svg">
-                        </a>                        
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="/assets/insta-icon.de2f7a98.svg">
-                        </a>                        
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="/assets/fb-icon.e6bb8f12.svg">
-                        </a>                        
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-<!-- About -->
+    <!-- About -->
     <div class="container-about">
         <div class="main-foto">
             <img src="/assets/katja-main.png" alt="Katja Karling">
         </div>
         <div class="text-about">
-            <p> Hi!<br/><br/>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos atque quae quam, 
-                eaque quo ipsa corrupti facere cumque asperiores beatae veritatis similique, ducimus 
-                eveniet quibusdam id minima dolores quia, expedita quidem reiciendis. Eligendi labore 
-                nulla, reprehenderit animi quia mollitia voluptate dolores libero optio quos repellendus, 
-                maiores quo? Quasi eum est, non nulla beatae sint recusandae rerum? Modi accusantium 
-                nobis harum placeat necessitatibus quidem provident numquam vel veritatis qui sequi 
-                autem suscipit recusandae tenetur, adipisci dolorum repellendus consequatur nemo! 
-                Adipisci quisquam voluptatum perspiciatis ab molestias fuga provident error ratione. 
-                Aspernatur natus molestias adipisci iste perferendis sint omnis iusto, veritatis 
-                corporis magni corrupti officiis provident, vitae illo asperiores beatae hic. Libero 
-                nisi nesciunt voluptate eligendi sint impedit, placeat perferendis corporis doloremque 
+            <p> Hi!<br /><br />
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos atque quae quam,
+                eaque quo ipsa corrupti facere cumque asperiores beatae veritatis similique, ducimus
+                eveniet quibusdam id minima dolores quia, expedita quidem reiciendis. Eligendi labore
+                nulla, reprehenderit animi quia mollitia voluptate dolores libero optio quos repellendus,
+                maiores quo? Quasi eum est, non nulla beatae sint recusandae rerum? Modi accusantium
+                nobis harum placeat necessitatibus quidem provident numquam vel veritatis qui sequi
+                autem suscipit recusandae tenetur, adipisci dolorum repellendus consequatur nemo!
+                Adipisci quisquam voluptatum perspiciatis ab molestias fuga provident error ratione.
+                Aspernatur natus molestias adipisci iste perferendis sint omnis iusto, veritatis
+                corporis magni corrupti officiis provident, vitae illo asperiores beatae hic. Libero
+                nisi nesciunt voluptate eligendi sint impedit, placeat perferendis corporis doloremque
                 enim magni alias voluptas.
-                <br/><br/>
+                <br /><br />
                 // Katja Karling
             </p>
         </div>
     </div>
 
-<!-- Previos work -->    
+    <!-- Previos work -->
     <!-- <h3 class="section-test-heading">Previos work</h3> -->
     <h3 class="section-test-heading">My projects</h3>
+
     <div class="test-content">
         <div>
-            <img id="myImg" src="/assets/project_1/1.png" class="img-demo" alt="Project one">
+            <img src="/assets/project_2/1.png" class="img-demo myImg" alt="Project two" onclick="openModal();"
+                currentSlide(1);>
+            <p style="padding: 10px 0;">Project two</p>
+        </div>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-            <!-- The Close Button -->
-                <span class="close">&times;</span>
-            <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
+        <div id="myModal2" class="modal2">
+            <span class="close-x cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content-2">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="/assets/project_2/1.png" style="width:100%">
+                    <div class="text">after</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="/assets/project_2/2.png" style="width:100%">
+                    <div class="text">before</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="/assets/project_2/3.png" style="width:100%">
+                    <div class="text">after</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="/assets/project_2/4.png" style="width:100%">
+                    <div class="text">before</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/assets/project_2/5.png" style="width:100%">
+                    <div class="text">after</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
+            <br>
 
-            <p style="padding: 10px 0;">Project one</p>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
         </div>
 
         <div>
-            <img src="/assets/project_3/1.png" class="img-demo" alt="Project three">
+            <img src="/assets/project_3/1.png" class="img-demo myImg" alt="Project three">
             <p style="padding: 10px 0;">Project three</p>
         </div>
 
     </div>
 
-    <div class="test-content-two">
-        <div class="slides-container" >
-            <div class="mySlides fade" >
-                <img src="/assets/project_2/1.png" class="img-demo" alt="Project two">
-                <div class="text">general image</div>
-            </div>
-
-            <div class="mySlides fade" >
-                <img src="/assets/project_2/2.png" class="img-demo" alt="Project two">
-                <div class="text">before</div>
-            </div>
-            
-            <div class="mySlides fade" >
-                <img src="/assets/project_2/3.png" class="img-demo" alt="Project two">
-                <div class="text">after</div>
-            </div>
-
-            <div class="mySlides fade" >
-                <img src="/assets/project_2/4.png" class="img-demo" alt="Project two">
-                <div class="text">before</div>
-            </div>
-            
-            <div class="mySlides fade" >
-                <img src="/assets/project_2/5.png" class="img-demo" alt="Project two">
-                <div class="text">after</div>
-            </div>  
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>            
-
-        </div>
-        <br>
-
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span> 
-        </div>        
-        <p style="padding: 10px 0;">Project two</p>        
-    </div>
-
-<!-- Contact section --> 
+    <!-- Contact section -->
     <section id="contact">
         <h3 class="section-test-heading">Let's get in touch</h3>
-        <p style="display: flex; flex-direction: row; justify-content: center;">Please use the form below to contact me</p>
+        <p style="display: flex; flex-direction: row; justify-content: center;">Please use the form below to contact me
+        </p>
         <div class="container-contact">
             <form>
                 <div>
@@ -161,7 +161,7 @@
         </div>
     </section>
 
-<!-- Footer -->
+    <!-- Footer -->
     <div class="container-footer">
         <div class="footer-upp">
             <div class="logo-footer">
@@ -186,7 +186,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>            
+            </div>
         </div>
         <div class="footer-down">
             <p>© 2023 Monogram studio, All Rights Reserved</p>
@@ -194,29 +194,15 @@
     </div>
 
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-        //   captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
+
+        function openModal() {
+            document.getElementById("myModal2").style.display = "block";
         }
 
+        function closeModal() {
+            document.getElementById("myModal2").style.display = "none";
+        }
 
-        // slides
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -232,19 +218,22 @@
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
+            var captionText = document.getElementsByClassName("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+                slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }        
-    </script>    
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
 </body>
+
 </html>
 
 <!-- Copyright or © -->
