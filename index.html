@@ -89,16 +89,53 @@
         </div>
 
         <div>
-            <img src="/assets/project_2/1.png" class="img-demo" alt="Project two">
-            <p style="padding: 10px 0;">Project two</p>
+            <img src="/assets/project_3/1.png" class="img-demo" alt="Project three">
+            <p style="padding: 10px 0;">Project three</p>
         </div>
+
     </div>
 
-    <div class="test-content">
-        <div>
-            <img src="/assets/project_3/1.png" class="img-demo" alt="Project three">
-            <p p style="padding: 10px 0;">Project three</p>
+    <div class="test-content-two">
+        <div class="slides-container" >
+            <div class="mySlides fade" >
+                <img src="/assets/project_2/1.png" class="img-demo" alt="Project two">
+                <div class="text">general image</div>
+            </div>
+
+            <div class="mySlides fade" >
+                <img src="/assets/project_2/2.png" class="img-demo" alt="Project two">
+                <div class="text">before</div>
+            </div>
+            
+            <div class="mySlides fade" >
+                <img src="/assets/project_2/3.png" class="img-demo" alt="Project two">
+                <div class="text">after</div>
+            </div>
+
+            <div class="mySlides fade" >
+                <img src="/assets/project_2/4.png" class="img-demo" alt="Project two">
+                <div class="text">before</div>
+            </div>
+            
+            <div class="mySlides fade" >
+                <img src="/assets/project_2/5.png" class="img-demo" alt="Project two">
+                <div class="text">after</div>
+            </div>  
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>            
+
         </div>
+        <br>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>        
+        <p style="padding: 10px 0;">Project two</p>        
     </div>
 
 <!-- Contact section --> 
@@ -177,6 +214,35 @@
         span.onclick = function() { 
           modal.style.display = "none";
         }
+
+
+        // slides
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }        
     </script>    
 </body>
 </html>
