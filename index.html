@@ -7,26 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="interior design, designer, portfolio, katja karling">
     <meta name="description" content="portfolio site katja karling">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Katja Karling</title>
 </head>
 
-<body>
+<body id="home">
     <header>
         <div class="container-nav">
             <div class="logo">
-                <a href="#">
+                <a href="#home">
                     <img src="/assets/logo.name.svg">
                 </a>
             </div>
             <!-- <h1 class="moto">with passion for scandinavian design</h1> -->
         </div>
         <div class="container-menu">
-            <div class="menu">
+            <nav class="menu">
                 <ul>
-                    <li>about</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <li>
                         <a href="#">
                             <img src="/assets/mail_FILL0_wght400_GRAD0_opsz20.svg">
@@ -43,123 +44,130 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
+
+    <main>
     <!-- About -->
-    <div class="container-about">
-        <div class="main-foto">
-            <img src="/assets/katja-main.png" alt="Katja Karling">
-        </div>
-        <div class="text-about">
-            <p> Hi!<br /><br />
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos atque quae quam,
-                eaque quo ipsa corrupti facere cumque asperiores beatae veritatis similique, ducimus
-                eveniet quibusdam id minima dolores quia, expedita quidem reiciendis. Eligendi labore
-                nulla, reprehenderit animi quia mollitia voluptate dolores libero optio quos repellendus,
-                maiores quo? Quasi eum est, non nulla beatae sint recusandae rerum? Modi accusantium
-                nobis harum placeat necessitatibus quidem provident numquam vel veritatis qui sequi
-                autem suscipit recusandae tenetur, adipisci dolorum repellendus consequatur nemo!
-                Adipisci quisquam voluptatum perspiciatis ab molestias fuga provident error ratione.
-                Aspernatur natus molestias adipisci iste perferendis sint omnis iusto, veritatis
-                corporis magni corrupti officiis provident, vitae illo asperiores beatae hic. Libero
-                nisi nesciunt voluptate eligendi sint impedit, placeat perferendis corporis doloremque
-                enim magni alias voluptas.
-                <br /><br />
-                // Katja Karling
-            </p>
-        </div>
-    </div>
-
-    <!-- Previos work -->
-    <!-- <h3 class="section-test-heading">Previos work</h3> -->
-    <h3 class="section-test-heading">My projects</h3>
-
-    <div class="test-content">
-        <div>
-            <img src="/assets/project_2/1.png" class="img-demo myImg" alt="Project two" onclick="openModal();"
-                currentSlide(1);>
-            <p style="padding: 10px 0;">Project two</p>
-        </div>
-
-        <div id="myModal2" class="modal2">
-            <span class="close-x cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content-2">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="/assets/project_2/1.png" style="width:100%">
-                    <div class="text">after</div>
+        <section id="about" >
+            <!-- <div class="container-about"> -->
+                <div class="main-foto">
+                    <img src="/assets/katja-main.png" alt="Katja Karling">
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="/assets/project_2/2.png" style="width:100%">
-                    <div class="text">before</div>
+                <div class="text-about">
+                    <p> Hi!<br /><br />
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos atque quae quam,
+                        eaque quo ipsa corrupti facere cumque asperiores beatae veritatis similique, ducimus
+                        eveniet quibusdam id minima dolores quia, expedita quidem reiciendis. Eligendi labore
+                        nulla, reprehenderit animi quia mollitia voluptate dolores libero optio quos repellendus,
+                        maiores quo? Quasi eum est, non nulla beatae sint recusandae rerum? Modi accusantium
+                        nobis harum placeat necessitatibus quidem provident numquam vel veritatis qui sequi
+                        autem suscipit recusandae tenetur, adipisci dolorum repellendus consequatur nemo!
+                        Adipisci quisquam voluptatum perspiciatis ab molestias fuga provident error ratione.
+                        Aspernatur natus molestias adipisci iste perferendis sint omnis iusto, veritatis
+                        corporis magni corrupti officiis provident, vitae illo asperiores beatae hic. Libero
+                        nisi nesciunt voluptate eligendi sint impedit, placeat perferendis corporis doloremque
+                        enim magni alias voluptas.
+                        <br /><br />
+                        // Katja Karling
+                    </p>
                 </div>
+            <!-- </div> -->
+        </section>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="/assets/project_2/3.png" style="width:100%">
-                    <div class="text">after</div>
-                </div>
+        <!-- Previos work -->
+        <section id="portfolio">
+        <!-- <h3 class="section-test-heading">Previos work</h3> -->
+            <h3 class="section-test-heading">My projects</h3>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="/assets/project_2/4.png" style="width:100%">
-                    <div class="text">before</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="/assets/project_2/5.png" style="width:100%">
-                    <div class="text">after</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
-        </div>
-
-        <div>
-            <img src="/assets/project_3/1.png" class="img-demo myImg" alt="Project three">
-            <p style="padding: 10px 0;">Project three</p>
-        </div>
-
-    </div>
-
-    <!-- Contact section -->
-    <section id="contact">
-        <h3 class="section-test-heading">Let's get in touch</h3>
-        <p style="display: flex; flex-direction: row; justify-content: center;">Please use the form below to contact me
-        </p>
-        <div class="container-contact">
-            <form>
+            <div class="test-content">
                 <div>
-                    <label for="name">Name*</label>
-                    <input type="text" name="name">
+                    <img src="/assets/project_2/1.png" class="img-demo myImg" alt="Project two" onclick="openModal();"
+                        currentSlide(1);>
+                    <p style="padding: 10px 0;">Project two</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email">
+
+                <div id="myModal2" class="modal2">
+                    <span class="close-x cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content-2">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="/assets/project_2/1.png" style="width:100%">
+                            <div class="text">after</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="/assets/project_2/2.png" style="width:100%">
+                            <div class="text">before</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="/assets/project_2/3.png" style="width:100%">
+                            <div class="text">after</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="/assets/project_2/4.png" style="width:100%">
+                            <div class="text">before</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="/assets/project_2/5.png" style="width:100%">
+                            <div class="text">after</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message*</label>
-                    <textarea name="message"></textarea>
+
+                <div>
+                    <img src="/assets/project_3/1.png" class="img-demo myImg" alt="Project three">
+                    <p style="padding: 10px 0;">Project three</p>
                 </div>
-                <button type="submit" class="btn-submit">Submit</button>
-            </form>
-        </div>
-    </section>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h3 class="section-test-heading">Let's get in touch</h3>
+            <p style="display: flex; flex-direction: row; justify-content: center;">Please use the form below to contact me
+            </p>
+            <div class="container-contact">
+                <form>
+                    <div>
+                        <label for="name">Name*</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message*</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <div class="container-footer">
