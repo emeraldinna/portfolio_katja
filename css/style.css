@@ -27,52 +27,52 @@ img {
     width: 100%;
 }
 
-/* Menu */
-header {
-    position: sticky;
-    top: 0;
+/* Header */
+.hero {
+    position: relative;
+}
+
+/* Navbar */
+#navbar {
+    display: block;
+    /* border: 1px solid red; test */
+    height: 132px;
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
-    padding: 0 16px;
-} 
-
-.logo {
-    line-height: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    align-self: middle center;
-    justify-content: center;
-    border-bottom: 1px solid #0a0a0a;
     padding-top: .9375rem;
-    padding-bottom: 1.25rem;
 }
 
-.container-menu {
+.navbar-down {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #0a0a0a;
     border-bottom: 1px solid #0a0a0a;
+    background-color: #fff;
+}
+
+.navbar-down ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; -test */
 }
 
-.container-menu .menu ul,
-.container-menu .menu a > img {
+.navbar-down a {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 400;
+    font-size: small;
+    font-style: normal;
 }
 
-.menu li {
-    /* border: 1px solid green; - test */
-    padding-right: 18px;
-    font-size: .675rem;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-}
 
 /* About */
 /* .container-about  */
