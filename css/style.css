@@ -204,7 +204,7 @@ img {
     padding-left: 6px;
 }
 
-.footer .footer-down {
+.footer .footer-bottom {
     background-color: #d8d8d8;
 }
 
@@ -244,7 +244,7 @@ img {
     height: 12px;
 }
 
-.footer-down p {
+.footer-bottom p {
     color: #4c4c4c;
     font-size: 9px;
     /* font-size: .55rem; */
