@@ -8,6 +8,7 @@
     <meta name="keywords" content="interior design, designer, portfolio, katja karling">
     <meta name="description" content="portfolio site katja karling">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Katja Karling</title>
 </head>
@@ -91,65 +92,71 @@
             </header>
             <div class="row">
                 <div class="column">
-                    <img src="/assets/project_1/1.png" class="myImg" alt="Project one" onclick="openModal();"
-                    currentSlide(1);>
+                    <a href="/assets/project_1/1.png" data-lightbox="project1" data-title="After">
+                        <img src="/assets/project_1/1.png" alt="Project 1" class="myImg">
+                    </a>                    
                     <p>Project 1</p>
-                    <div id="myModal2" class="modal2">
-                        <span class="close-x cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content-2">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 5</div>
-                                <img src="/assets/project_1/1.png" style="width:100%">
-                                <div class="text">after</div>
-                            </div>
-    
-                            <div class="mySlides fade">
-                                <div class="numbertext">2 / 5</div>
-                                <img src="/assets/project_1/2.png" style="width:100%">
-                                <div class="text">before</div>
-                            </div>
-    
-                            <div class="mySlides fade">
-                                <div class="numbertext">3 / 5</div>
-                                <img src="/assets/project_1/3.png" style="width:100%">
-                                <div class="text">after</div>
-                            </div>
-    
-                            <div class="mySlides fade">
-                                <div class="numbertext">4 / 5</div>
-                                <img src="/assets/project_1/4.png" style="width:100%">
-                                <div class="text">before</div>
-                            </div>
-    
-                            <div class="mySlides fade">
-                                <div class="numbertext">5 / 5</div>
-                                <img src="/assets/project_1/5.png" style="width:100%">
-                                <div class="text">after</div>
-                            </div>
-    
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
+                    <div>
+                        <div style="display: none;">                    
+                            <a href="/assets/project_1/2.png" data-lightbox="project1" data-title="Before">
+                                <img src="/assets/project_1/2.png">
+                            </a>
+                            <a href="/assets/project_1/3.png" data-lightbox="project1" data-title="After">
+                                <img src="/assets/project_1/3.png">
+                            </a>
+                            <a href="/assets/project_1/4.png" data-lightbox="project1" data-title="After">
+                                <img src="/assets/project_1/4.png">
+                            </a>
+                            <a href="/assets/project_1/5.png" data-lightbox="project1" data-title="Before">
+                                <img src="/assets/project_1/5.png">
+                            </a>
                         </div>
-                        <br>
-    
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>    
+                </div>
+                <div class="column">
+                    <a href="/assets/project_2/1.png" data-lightbox="project2" data-title="After">
+                        <img src="/assets/project_2/1.png" alt="Project 2" class="myImg">
+                    </a>
+                    <p>Project 2</p>
+                    <div>
+                        <div style="display: none;">
+                            <a href="/assets/project_2/2.png" data-lightbox="project2" data-title="Before">
+                                <img src="/assets/project_2/2.png" alt="Project 2">
+                            </a>
+                            <a href="/assets/project_2/3.png" data-lightbox="project2" data-title="After">
+                                <img src="/assets/project_2/3.png" alt="Project 2">
+                            </a>
+                            <a href="/assets/project_2/4.png" data-lightbox="project2" data-title="Before">
+                                <img src="/assets/project_2/4.png" alt="Project 2">
+                            </a>
+                            <a href="/assets/project_2/5.png" data-lightbox="project2" data-title="After">
+                                <img src="/assets/project_2/5.png" alt="Project 2">
+                            </a>                                                                                    
+                        </div>
+                    </div>                        
+                </div>
+                <div class="column">
+                    <a href="/assets/project_3/1.png" data-lightbox="project3" data-title="After">
+                        <img src="/assets/project_3/1.png" alt="Project 3" class="myImg">
+                    </a>                    
+                    <p>Project 3</p>                        
+                    <div>
+                        <div style="display: none;">
+                            <a href="/assets/project_3/2.png" data-lightbox="project3" data-title="After">
+                                <img src="/assets/project_3/2.png" alt="Project 3">
+                            </a>
+                            <a href="/assets/project_3/3.png" data-lightbox="project3" data-title="Before">
+                                <img src="/assets/project_3/3.png" alt="Project 3">
+                            </a>
+                            <a href="/assets/project_3/4.png" data-lightbox="project3" data-title="After">
+                                <img src="/assets/project_3/4.png" alt="Project 3">
+                            </a>
+                            <a href="/assets/project_3/5.png" data-lightbox="project3" data-title="Before">
+                                <img src="/assets/project_3/5.png" alt="Project 3">
+                            </a>                                                                                                            
                         </div>
                     </div>
-                </div>
-                <div class="column">
-                    <img src="/assets/project_2/1.png" class="myImg" alt="Project two">
-                    <p>Project 2</p>
-                </div>
-                <div class="column">
-                    <img src="/assets/project_3/1.png" class="myImg" alt="Project three">
-                    <p>Project 3</p>                        
-                </div>
+                </div>    
             </div>
 
             <div class="row">
@@ -229,45 +236,15 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
+    <script src="js/lightbox.min.js"></script>
     <script>
-
-        function openModal() {
-            document.getElementById("myModal2").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("myModal2").style.display = "none";
-        }
-
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            var captionText = document.getElementsByClassName("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
+        lightbox.option({
+          'fadeDuration': 200,
+          'resizeDuration': 350,
+          'imageFadeDuration': 200,
+          'wrapAround': true
+        })
+        
         // Smooth Scrolling
         $('#navbar a').on('click', function (e) {
             if (this.hash !== '') {
@@ -283,7 +260,6 @@
                 );
             }
         });        
-
     </script>
 </body>
 
