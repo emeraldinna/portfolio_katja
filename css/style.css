@@ -25,7 +25,19 @@ a {
 }
 
 p {
-    font-size: 14px; /* test */
+    font-size: 16px; /* test */
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
 }
 
 img {
@@ -62,43 +74,45 @@ img {
     /* border: 1px solid red; */
 }
 
-/* .navbar-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.navbar-top .logo {
-    margin-top: 12px;
-    margin-bottom: 12px;
-} */
-
 .navbar-top {
     display: block;
+    /* align-items: center;
+    justify-content: center; */
     background-color: #fff;
-    /* padding-top: .9375rem; */
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     /* border: 1px solid blue; */
 }
 
 .navbar-top .logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
-    /* margin-bottom: 12px; */
+    margin-bottom: 24px;
+    /* border: 1px solid red; */
+}
+
+/* задаёт размер для лого */
+.logo a {
+    /* width: 470px; */
+    width: 30vw;
+    /* border: 1px solid green; */
 }
 
 .navbar-top .motto {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: normal;
     font-weight: 400;
+    /* border: 1px solid gray; */
+}
+
+.navbar-top .motto h4 {
+    display: flex;
+    /* border: 1px solid orange; */
 }
 
 .navbar-down {
