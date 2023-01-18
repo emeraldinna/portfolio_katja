@@ -19,21 +19,32 @@ ul {
 
 a {
     text-decoration: none;
-    color: #333;
     cursor: pointer;
-    font-size: 14px; /* test */
+    /* font-size: 14px; */
+    font-weight: 400;
+    font-size:larger;
+    font-style: normal;
 }
 
 p {
-    font-size: 16px; /* test */
+    font-size: 18px; /* test */
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 40px; /* 2.5rem */
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 24px; /* 1.5rem */
+}
+
+h3 {
+    font-size: 18.72px; /* 1.17em or 1rem */
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 16px; /* 0.85rem */
 }
 
 h6 {
@@ -45,8 +56,9 @@ img {
 }
 
 .section-header {
-    /* padding: 30px; */
-    padding: 20px;
+    padding: 30px;
+    border: 2px solid orange;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,10 +66,11 @@ img {
     text-transform: uppercase;
 }
 
-.section-padding {
-    /* padding: top-bottom */
+/* ??? .section-padding {
+    padding: top-bottom
     padding-top: 15px;
-}
+    border: 3px dotted red;
+} ??? */
 
 /* Header */
 .hero {
@@ -71,7 +84,7 @@ img {
     padding: 0 20px;
     width: 100%;
     position: fixed;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .navbar-top {
@@ -79,9 +92,10 @@ img {
     /* align-items: center;
     justify-content: center; */
     background-color: #fff;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    /* border: 1px solid blue; */
+    /* padding-top: 22px;
+    padding-bottom: 22px; */
+    padding: 22px 0;
+    border: 1px solid blue;
 }
 
 .navbar-top .logo {
@@ -89,7 +103,7 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     /* border: 1px solid red; */
 }
 
@@ -105,42 +119,75 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: normal;
-    font-weight: 400;
     /* border: 1px solid gray; */
 }
 
 .navbar-top .motto h4 {
-    display: flex;
     /* border: 1px solid orange; */
 }
 
 .navbar-down {
     display: flex;
     justify-content: center;
-    border-top: 1px solid #0a0a0a;
-    border-bottom: 1px solid #0a0a0a;
+    /* border-top: 1px solid #0a0a0a;
+    border-bottom: 1px solid #0a0a0a; */
     background-color: #fff;
+    padding-bottom: 6px;
+    /* width: 100%; */
 }
 
-.navbar-down ul {
+.navbar-down .container-list ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .navbar-down a {
     display: flex;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 12px;
     /* font-weight: 400;
     font-size: small;
     font-style: normal; */
+    color: black;
+}
+
+.navbar-down .section a:focus {
+    /* background-color: #839ca8; */
+    /* background-color: #849ca7; */
+    /* background-color: #69808c; */
+    /* background-color: #798e99; */
+    /* background-color: #99b3c0; ! */
+    background: rgba(121, 142, 153, 0.7); /* change background-image opacity in css without affecting text */
+    /* opacity: 0.7; */
+}
+
+.navbar-down .menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-down .menu .line {
+    width: 30vw; 
+    border: .85px solid #0a0a0a;;
+    box-shadow: 1px 2px 5px #99b3c0;
+    margin-left: auto 5px;
+    margin-right: auto 5px;
+}
+
+.navbar-down .menu .container-list {
+    width: 40vw;
+    justify-items: center;
+    justify-content: space-between;
 }
 
 /* About */
 .container-about {
     margin: 0 20px;
+    border: 3px solid green;
+    padding: 10px 0;
 }
 
 .flex-columns .row {
@@ -183,6 +230,13 @@ img {
 }
 
 /* Previos work */
+.portfolio {
+    margin: 0 20px;
+    border: 3px solid red;
+    /* padding-top: 120px; */
+    padding-top: 98px;
+}
+
 .flex-grid .row {
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +254,9 @@ img {
 .contact {
     display: block;
     padding-bottom: 50px;
+    margin: 0 20px;
+    border: 3px solid blueviolet;
+    padding-top: 120px;
 }
 
 .container-contact p,
@@ -252,7 +309,8 @@ img {
 }
 
 .footer .footer-container {
-    background-color: #ededed;
+    /* background-color: #ededed; */
+    background: rgba(121, 142, 153, 0.7);
     padding: 28px 15px 3px 32px;
 }
 
@@ -302,7 +360,7 @@ img {
 }
 
 .footer-container .footer-copyright p {
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px 0 10px 0;
     color: #4c4c4c;
 }
