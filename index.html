@@ -31,9 +31,9 @@
                     <div class="line"></div>
                     <div class="container-list">
                         <ul>
-                            <li class="section"><a href="#about">about</a></li>
-                            <li class="section"><a href="#portfolio">portfolio</a></li>
-                            <li class="section"><a href="#contact">contact</a></li>
+                            <li class="about active"><a href="#about">about</a></li>
+                            <li class="portfolio"><a href="#portfolio">portfolio</a></li>
+                            <li class="contact"><a href="#contact">contact</a></li>
                             <li class="navbar-icon">
                                 <a href="https://www.instagram.com/katja_karling/" target="_blank">
                                     <!-- <i class="fa-brands fa-instagram fa-xl"></i> -->
@@ -314,8 +314,31 @@
                     },
                     800
                 );
-            }
-        });
+            }            
+        }); 
+        
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll("nav .container-list ul li");
+        window.addEventListener('scroll', () => {
+            let current = "";
+            // console.log(pageYOffset);
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                // console.log(sectionTop); // 0 - about, 831 - projects, 2213 - contact;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            // console.log(current);
+            navLi.forEach((li) => {
+                li.classList.remove('active');
+                if(li.classList.contains(current)) {
+                    li.classList.add('active');
+                }
+            });
+        });        
     </script>
 </body>
 
