@@ -58,7 +58,7 @@ img {
 
 .section-header {
     padding: 30px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     /* padding: 20px; */
     display: flex;
     flex-direction: column;
@@ -85,14 +85,14 @@ img {
     padding: 0 20px;
     width: 100%;
     position: fixed;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .navbar-top {
     display: block;
     background-color: #fff;
     padding: 22px 0;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .navbar-top .logo {
@@ -127,7 +127,7 @@ img {
     background-color: #fff;
     /* padding-bottom: 6px; */
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .navbar-down .menu {
@@ -179,7 +179,7 @@ nav .container-list ul li.active {
 /* About */
 .container-about {
     margin: 0 20px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     padding: 10px 0;
 }
 
@@ -391,7 +391,7 @@ nav .container-list ul li.active {
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.5;
     }
 
@@ -440,7 +440,7 @@ nav .container-list ul li.active {
         width: 18px;
     }
 
-    li.navbar-icon.contact a img {
+    li.navbar-icon.contact-link a img {
         width: 22px;
     }
     
@@ -454,7 +454,6 @@ nav .container-list ul li.active {
     }
 
     #about {
-        border: 5px dotted red; 
         padding-top: 210px !important;
     }
     
@@ -465,8 +464,8 @@ nav .container-list ul li.active {
     }
 
     .container-about {
-        border: 5px dotted lightgreen; 
-        padding-top: 0px !important;
+        padding-top: 5px !important;
+        padding-bottom: 30px;
     }
 
     .portfolio .row {
@@ -474,13 +473,27 @@ nav .container-list ul li.active {
     }
 
     #portfolio {
-        border: 5px solid grey;
         padding-top: 0px !important;
     }
 
+    .portfolio .column img {
+        margin-bottom: 10px;
+    }
+
     #contact {
-        border: 5px dotted lightblue; 
         padding-top: 0px !important;
+    }
+
+    .contact .container-contact p {
+        font-size: 16px;
+    }
+
+    .contact .callback-form form label {
+        font-size: 14px;
+    }
+
+    .contact .callback-form form button {
+        font-size: 14px;
     }
 
     /* ??? .section-padding {
@@ -493,7 +506,30 @@ nav .container-list ul li.active {
         margin-bottom: 25px; /*test*/
     }
 
-}    
+    .footer-container .logo-footer {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .footer-container .footer-email a {
+        margin-bottom: 10px;
+        font-size:large;
+        font-weight: bold;
+    }
+
+    .footer-container .social .wrapper-social-icon a img {
+        height: 22px;
+    }
+
+    .footer-container .social h4 {
+        font-size: medium;
+    }
+
+    .footer-container .footer-copyright p {
+        font-size: 12px;
+    }    
+
+}  
 
 /* @media(max-width: 540px)  between 320-576px */
 @media(max-width: 576px) {
