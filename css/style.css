@@ -120,6 +120,7 @@ img {
 }
 
 .navbar-top .motto h4 {
+    color: #283238; /* don't work*/
     /* border: 1px solid orange; */
 }
 
@@ -225,6 +226,8 @@ nav .container-list ul li.active {
 .flex-columns img {
     width: 100%;
     height: 100%;
+    /* width: 80%;
+    height: fit-content; */
     object-fit: cover;
 }
 
@@ -253,9 +256,16 @@ nav .container-list ul li.active {
 
 .flex-grid .column {
     flex: 33%;
-    max-width: 30%;
+    /* max-width: 30%;  */
+    max-width: 25%;
     padding: 0px 12px;
 }
+
+/* .flex-grid .column img {
+    border: 3px solid green;
+    max-height: 65%;
+    max-width: fit-content;
+} */
 
 /* Contact */
 .contact {
@@ -264,6 +274,10 @@ nav .container-list ul li.active {
     margin: 0 20px;
     /* border: 3px solid blueviolet; */
     padding-top: 120px;
+}
+
+.container-contact p {
+    font-size: 18px;
 }
 
 .container-contact p,
@@ -280,20 +294,23 @@ nav .container-list ul li.active {
 .callback-form label {
     display: block;
     margin-top: 10px;
-    font-size: 12px;
-    color: #9c9a9a;
+    font-size: 14px;
+    /* color: #9c9a9a; */
+    color: #283238;
 }
 
 .callback-form textarea {
-    height: 120px;
+    height: 160px;
 }
 
 .callback-form input,
 .callback-form textarea {
     width: 50vw; /* 50% */
     border: 1px #ddd solid;
-    background-color: #ededed;
-    padding: 4px;
+    /* background-color: #ededed; */
+    background: rgba(114, 116, 115, 0.3);
+    padding: 8px;
+    font-size: 18px;
 }
 
 .callback-form input:focus,
@@ -307,12 +324,15 @@ nav .container-list ul li.active {
     background-color: #4c4c4c;
     border: transparent;
     color: #fff;
-    width: 50vw;    
+    width: 50vw;
+    line-height: 24px;
+    font-size: 18px;
 }
 
 /* Footer */
 .footer {
     width: 100%;
+    /* border: 1px solid red; */
 }
 
 .footer .footer-container {
@@ -330,12 +350,12 @@ nav .container-list ul li.active {
 }
 
 .footer-container .footer-email a {
-    color: #628696;
-    /* font-size: 14px; */
+    /* color: #628696; */
+    color: #283238;
 }
 
 .footer-container .social {
-    display: flex;
+    display: inline-flex;
 }
 
 .social .wrapper-social-icon,
@@ -351,7 +371,7 @@ nav .container-list ul li.active {
     font-weight: 400;
     font-size: small; */
     text-transform: uppercase;
-    font-size: 12px; 
+    font-size: 14px; 
     font-weight: 600; 
 }
 
@@ -362,14 +382,16 @@ nav .container-list ul li.active {
 .icon {
     display: flex;
     align-items: center;
-    height: 16px;
+    height: 26px;
+    width: 26px;
     padding-right: 8px;
 }
 
 .footer-container .footer-copyright p {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 0 10px 0;
-    color: #4c4c4c;
+    /* color: #4c4c4c; */
+    color: #283238;
 }
 
 /* Image */
