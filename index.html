@@ -17,13 +17,25 @@
     <header class="hero">
         <div id="navbar">
             <div class="navbar-top">
-                <div class="logo">
-                    <a href="#home">
-                        <img src="/assets/logo.name.svg">
-                    </a>
+                <div id="brand">
+                    <div class="logo">
+                        <a href="#home">
+                            <img src="/assets/logo.name.svg">
+                        </a>
+                    </div>                
+                    <div class="motto">
+                        <h2 style="color: #495b67;">INTERIOR STYLING & HOME DECORATION</h2>
+                    </div>
                 </div>
-                <div class="motto">
-                    <h2 style="color: #495b67;">INTERIOR STYLING & HOME DECORATION</h2>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this);">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="navbar-down">
@@ -57,13 +69,14 @@
                     <div class="line"></div>
                 </nav>
             </div>
+            <div class="line-mobile-devices"></div>
         </div>
     </header>
 
     <main>
         <!-- About -->
-        <section id="about" style="padding-top: 320px;">
-            <div class="container-about flex-columns">
+        <section id="about" style="padding-top: 320px;" >
+            <div class="container-about flex-columns section-padding">
                 <div class="row">
                     <div class="column">
                         <div class="column-1">
@@ -470,7 +483,11 @@
                     li.classList.add('active');
                 }
             });
-        });        
+        });
+        
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }        
     </script>
 </body>
 

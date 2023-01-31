@@ -80,6 +80,14 @@ img {
 }
 
 /* Navbar */
+#hamburger-icon {
+    display: none;
+}
+
+#navbar .line-mobile-devices {
+    display: none;
+}
+
 #navbar {
     display: block;
     padding: 0 20px;
@@ -308,7 +316,8 @@ nav .container-list ul li.active {
     width: 50vw; /* 50% */
     border: 1px #ddd solid;
     /* background-color: #ededed; */
-    background: rgba(114, 116, 115, 0.3);
+    /* background: rgba(114, 116, 115, 0.3); */
+    background: rgb(209, 210, 210, 0.3);
     padding: 8px;
     font-size: 18px;
 }
@@ -321,7 +330,9 @@ nav .container-list ul li.active {
 .callback-form .btn-submit {
     margin-top: 15px;
     padding: 10px 0;
-    background-color: #4c4c4c;
+    /* background-color: #4c4c4c; */
+    background-color: #283238;  /* option ?*/
+    /* background-color: #495b67; option ?*/
     border: transparent;
     color: #fff;
     width: 50vw;
@@ -480,7 +491,7 @@ nav .container-list ul li.active {
     }
 
     #about {
-        padding-top: 210px;
+        padding-top: 210px !important;
     }
     
     .flex-columns img {
@@ -507,7 +518,7 @@ nav .container-list ul li.active {
     }
 
     #contact {
-        padding-top: 0px;
+        padding-top: 0px !important;
     }
 
     .contact .container-contact p {
@@ -677,7 +688,7 @@ nav .container-list ul li.active {
     }
 
     #about {
-        padding-top: 268px; /* 278px*/
+        padding-top: 268px !important; /* 278px*/
     }
     
     .flex-columns img {
@@ -696,7 +707,7 @@ nav .container-list ul li.active {
     }
 
     #portfolio {
-        padding-top: 58px;
+        padding-top: 58px !important;
     }
 
     .portfolio .column img {
@@ -704,7 +715,7 @@ nav .container-list ul li.active {
     }
 
     #contact {
-        padding-top: 56px;
+        padding-top: 56px !important;
     }
 
     /* .contact .container-contact p {
@@ -749,37 +760,165 @@ nav .container-list ul li.active {
 
 /* @media(max-width: 540px)  between 320-576px */
 @media(max-width: 576px) {
-    p {
+    /* p {
         font-size: 1.1rem;
     }
 
     h3 {
         font-size: 1.3rem;
+    } */
+
+    #navbar {
+        /* border: 1px solid red; */
+        padding-bottom: 8px;
+        background-color: white;
+    }
+
+    header .navbar-down {
+        display: none;
     }
 
     .navbar-top {
-        padding-bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid black; */
+        padding-top: 15px; /* было 22 верх и низ  */ 
+        padding-bottom: 10px;
     }
 
-    .navbar-top .logo {
-        margin-top: 0;
-        margin-bottom: 0;
+    #brand {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+        width: 80vw;
+    }
+
+    #brand .logo {
+        display: flex;
     }
     
-    .navbar-top .motto {
-        display: none;
+    /* задаёт размер для лого */
+    #brand .logo a {
+        width: 70vw;
+        /* border: 1px solid green; */
+    }
+    
+    #brand .motto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid gray; */
     }
 
-    .navbar-down .menu .navbar-icon {
-        display: none;
+    #navbar .navbar-top .motto h2 {
+        font-size: 14px;
     }
 
-    .section-padding {
-        padding: 0;
+    #hamburger-icon {
+        display: block;
+        /* width: 10vw; */
+        padding: 5px;
+        margin: 0;
+        /* border: 1px solid orange; */
+    }
+    
+    #hamburger-icon div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    #hambuger-icon ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #hambuger-icon ul li:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    } /* рвботает? */
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        /* top: 130px; */
+        top: 150px;
+        left: 0;
+        height: calc(100vh - 150px);
+        width: 100%;
+        background-color: white;
+        /* border: 2px solid green; */
+    }
+    
+    .mobile-menu li {
+        margin-bottom: 15px;
+    }
+
+    .mobile-menu li a {
+        font-size: 16px;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+      
+    .open .bar2 {
+        opacity: 0;
+    }
+      
+    .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
+    }
+
+    .open .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 45px; /* опустить вниз список */
+    }
+
+    #navbar .line-mobile-devices {
+        display: flex;
+        width: 90vw; 
+        border: .85px solid #0a0a0a;;
+        box-shadow: 1px 2px 5px #99b3c0;
+    }
+
+    /* .section-padding {
+        border: 1px solid red;
+    } */
+
+    #about {
+        padding-top: 140px !important;
     }
 
     .container-about .column p {
         font-size: 1rem;
+    }
+
+    #portfolio .section-header,
+    #contact .section-header {
+        /* border: 1px solid green; */
+        padding-top: 30px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    #portfolio,
+    #contact {
+        padding-top: 5px !important;
     }
 
     /* input[type="text"],
@@ -792,11 +931,6 @@ nav .container-list ul li.active {
         flex: 100%;
         max-width: 100%;
     }
-
-    /* .flex-columns .column .column-1,
-    .flex-columns .column .column-2 {
-        padding: 0 20px;
-    }     */
     
     .flex-columns img {
         padding: 15px;
@@ -808,7 +942,7 @@ nav .container-list ul li.active {
 
     .flex-grid .column {
         flex: 100%;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .flex-grid .row {
@@ -816,22 +950,20 @@ nav .container-list ul li.active {
     }
 
     .portfolio .row > * {
-        padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        /* border: 1px solid green; */
+        padding-bottom: 35px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
     }
 
     .contact {
         padding: 0 20px;
-    }
-
-    .contact .container-contact {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-bottom: 25px;
     }
     
     .contact .container-contact p {
         text-align: center;
+        /* font-size: 16px; */
     }
 
     .callback-form input,
@@ -848,11 +980,15 @@ nav .container-list ul li.active {
     } */
 
     .footer-container .logo-footer {
-        width: 35%;
+        width: 55%;
     }
 
     .footer-container .footer-copyright p {
-        font-size: 8px;
+        font-size: 10px;
+    }
+
+    .footer-container .footer-email a {
+        font-weight: 400;
     }
 
 }
