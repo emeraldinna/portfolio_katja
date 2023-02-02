@@ -758,16 +758,8 @@ nav .container-list ul li.active {
     }    
 }
 
-/* @media(max-width: 540px)  between 320-576px */
+/* @media(max-width: ?600px?)  between 320-576px */
 @media(max-width: 576px) {
-    /* p {
-        font-size: 1.1rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    } */
-
     #navbar {
         /* border: 1px solid red; */
         padding-bottom: 8px;
@@ -813,13 +805,12 @@ nav .container-list ul li.active {
         /* border: 1px solid gray; */
     }
 
-    #navbar .navbar-top .motto h2 {
+    #brand .motto h2 {
         font-size: 14px;
     }
 
     #hamburger-icon {
         display: block;
-        /* width: 10vw; */
         padding: 5px;
         margin: 0;
         /* border: 1px solid orange; */
@@ -840,11 +831,6 @@ nav .container-list ul li.active {
         justify-content: space-around;
     }
 
-    #hambuger-icon ul li:hover {
-        transform: scale(1.1);
-        transition: 0.3s;
-    } /* рвботает? */
-
     .mobile-menu {
         display: none;
         position: absolute;
@@ -859,6 +845,8 @@ nav .container-list ul li.active {
     
     .mobile-menu li {
         margin-bottom: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .mobile-menu li a {
@@ -887,6 +875,15 @@ nav .container-list ul li.active {
         align-items: center;
         justify-content: flex-start;
         padding-top: 45px; /* опустить вниз список */
+    }
+
+    .open .mobile-menu li:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    } /* работает? */
+    
+    .open .mobile-menu li a:hover {
+        border-bottom: 2px solid #495b67;
     }
 
     #navbar .line-mobile-devices {
