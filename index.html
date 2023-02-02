@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="interior design, designer, portfolio, katja karling">
     <meta name="description" content="portfolio site katja karling">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
     <link rel="stylesheet" href="css/lightbox.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Katja Karling</title>
@@ -59,7 +59,7 @@
                                 </a>
                             </li>
                             <li class="navbar-icon contact-link">
-                                <a href="#">
+                                <a href="mailto:test@gmail.com" target="_blank">
                                     <img style="height: 30px;" src="/assets/envelope-regular.svg">
                                     <!-- <img style="height: 20px;" src="/assets/square-envelope-solid.svg"> -->
                                 </a>
@@ -411,19 +411,19 @@
                 <img src="/assets/logo.name.svg">
             </div>
             <p class="footer-email">
-                <a href="#">test@gmail.com</a>
+                <a href="mailto:test@gmail.com" target="_blank">test@gmail.com</a>
             </p>
             <div class="social">
                 <h4>Follow me</h4>
                 <div class="wrapper-social-icon">
                     <ul>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/katja_karling/" target="_blank">
                                 <img src="/assets/instagram.svg" class="icon">
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/katja.karling" target="_blank">
                                 <img src="assets/square-facebook.svg" class="icon">
                             </a>
                         </li>
@@ -445,53 +445,8 @@
           'imageFadeDuration': 200,
           'wrapAround': true
         })
-        
-        // Smooth Scrolling
-        $('#navbar a').on('click', function (e) {
-            if (this.hash !== '') {
-                e.preventDefault();
-
-                const hash = this.hash;
-
-                $('html, body').animate(
-                    {
-                        scrollTop: $(hash).offset().top - 100,
-                    },
-                    800
-                );
-            }            
-        }); 
-        
-        const sections = document.querySelectorAll("section");
-        const navLi = document.querySelectorAll("nav .container-list ul li");
-        window.addEventListener('scroll', () => {
-            let current = "";
-            // console.log(pageYOffset);
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                // console.log(sectionTop); // 0 - about, 831 - projects, 2213 - contact;
-                const sectionHeight = section.clientHeight;
-                if(pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLi.forEach((li) => {
-                li.classList.remove('active');
-                if(li.classList.contains(current)) {
-                    li.classList.add('active');
-                }
-            });
-
-        });
-
-        
-        function toggleMobileMenu(menu) {
-            menu.classList.toggle('open');
-        }
-        
     </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
