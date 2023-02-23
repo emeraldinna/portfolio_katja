@@ -90,16 +90,16 @@ img {
 
 #navbar {
     display: block;
-    padding: 0 20px;
     width: 100%;
     position: fixed;
+    padding: 22px 20px 20px 20px;
+    background-color: #fff;
     /* border: 1px solid red; */
 }
 
 .navbar-top {
     display: block;
-    background-color: #fff;
-    padding: 22px 0;
+    padding-bottom: 20px;
     /* border: 1px solid blue; */
 }
 
@@ -127,29 +127,30 @@ img {
     /* border: 1px solid gray; */
 }
 
-.navbar-top .motto h4 {
-    color: #283238; /* don't work*/
+.navbar-top .motto h2 {
+    color: #495b67;
+    font-weight: 400; 
+    font-size: 28px;
     /* border: 1px solid orange; */
 }
 
 .navbar-down {
     display: inline-block;
-    background-color: #fff;
     width: 100%;
-    padding-bottom: 6px;
     /* border: 1px solid green; */
 }
 
 .navbar-down .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 nav .container-list {
     display: flex;
     justify-content: center;
-    width: 40vw;
+    width: 35vw;
+    /* border: 2px solid blue; */
 }
 
 nav .container-list ul {
@@ -166,6 +167,7 @@ nav .container-list ul li {
     align-items: center;
     padding: 0;
     margin: 0;
+    line-height: 0.7; /* позволяет сузить бэкграунд для active */
 }
 
 nav .container-list ul li a {
@@ -187,21 +189,25 @@ li.navbar-icon.contact-link a img {
 }
 
 nav .container-list ul li.active {
-    background: rgba(121, 142, 153, 0.7); /* change background-image opacity in css without affecting text */
+    /* background: rgba(121, 142, 153, 0.7); change background-image opacity in css without affecting text */
+    background: rgba(121, 142, 153, 0.3);
 }
 
 .navbar-down .menu .line {
     display: flex;
-    width: 30vw; 
+    /* width: 30vw;  */
+    width: 45vw;
     border: .85px solid #0a0a0a;;
     box-shadow: 1px 2px 5px #99b3c0;
+    /* box-shadow: 1px 2px 5px #d7dde0; альтернатива */
     margin-left: auto 5px;
     margin-right: auto 5px;
 }
 
 /* About */
 .container-about {
-    margin: 0 20px;
+    /* margin: 0 20px;  -> was!!! */
+    margin: 0 240px; /* test!!! */
     /* border: 3px solid green; */
     padding: 10px 0;
 }
@@ -285,7 +291,7 @@ nav .container-list ul li.active {
 }
 
 .container-contact p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .container-contact p,
@@ -302,7 +308,7 @@ nav .container-list ul li.active {
 .callback-form label {
     display: block;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
     /* color: #9c9a9a; */
     color: #283238;
 }
@@ -337,7 +343,7 @@ nav .container-list ul li.active {
     color: #fff;
     width: 50vw;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* Footer */
@@ -348,7 +354,8 @@ nav .container-list ul li.active {
 
 .footer .footer-container {
     /* background-color: #ededed; */
-    background: rgba(121, 142, 153, 0.7);
+    /* background: rgba(121, 142, 153, 0.7); */
+    background: rgba(121, 142, 153, 0.3);
     padding: 28px 15px 3px 32px;
 }
 
