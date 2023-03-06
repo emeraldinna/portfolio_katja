@@ -356,7 +356,9 @@ nav .container-list ul li.active {
     padding-right: 8px;
 }
 
-.footer-container .footer-copyright p {
+.footer-container .footer-copyright p,
+.footer-container .footer-copyright .developer p {
+    display: inline;
     font-size: 14px;
     /* padding: 10px 0 10px 0; */
     padding: 10px 0;
@@ -710,10 +712,10 @@ nav .container-list ul li.active {
 
 /* @media(max-width: ?600px?)  between 320-576px */
 @media(max-width: 576px) {
+    /* Navbar */
     #navbar {
         /* border: 1px solid red; */
-        padding-bottom: 8px;
-        background-color: white;
+        padding: 0 20px 5px 20px;
     }
 
     header .navbar-down {
@@ -724,9 +726,9 @@ nav .container-list ul li.active {
         width: 100%;
         display: flex;
         flex-direction: row;
-        /* border: 1px solid black; */
-        padding-top: 15px; /* было 22 верх и низ  */ 
-        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        /* border: 1px solid green; */
     }
 
     #brand {
@@ -734,7 +736,6 @@ nav .container-list ul li.active {
         align-items: center;
         justify-content: center;
         /* border: 1px solid red; */
-        width: 80vw;
     }
 
     #brand .logo {
@@ -743,15 +744,13 @@ nav .container-list ul li.active {
     
     /* задаёт размер для лого */
     #brand .logo a {
-        width: 70vw;
+        width: 80vw; /* was 70vw */
         /* border: 1px solid green; */
     }
     
     #brand .motto {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         /* border: 1px solid gray; */
     }
 
@@ -761,8 +760,9 @@ nav .container-list ul li.active {
 
     #hamburger-icon {
         display: block;
-        padding: 5px;
-        margin: 0;
+        padding-left: 10px;
+        /* width: 20%;  if needed? */ 
+        /* margin: 0;  if needed? */
         /* border: 1px solid orange; */
     }
     
@@ -824,13 +824,13 @@ nav .container-list ul li.active {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 45px; /* опустить вниз список */
+        padding-top: 55px; /* опустить вниз список */
     }
 
     .open .mobile-menu li:hover {
         transform: scale(1.1);
         transition: 0.3s;
-    } /* работает? */
+    }
     
     .open .mobile-menu li a:hover {
         border-bottom: 2px solid #495b67;
@@ -838,96 +838,96 @@ nav .container-list ul li.active {
 
     #navbar .line-mobile-devices {
         display: flex;
-        width: 90vw; 
+        width: 100%;
         border: .85px solid #0a0a0a;;
         box-shadow: 1px 2px 5px #99b3c0;
     }
 
+    /* About */
     #about {
         padding-top: 140px !important;
+        /* border: 1px solid blue; */
     }
 
-    .container-about .column p {
-        font-size: 1rem;
+    #about.flex-grid .row {
+        padding-bottom: 50px !important;
     }
 
-    #portfolio .section-header,
-    #contact .section-header {
-        /* border: 1px solid green; */
-        padding-top: 30px;
-        margin-top: 25px;
-        margin-bottom: 0;
-    }
-
-    #portfolio,
-    #contact {
-        padding-top: 5px !important;
-    }
-
-    /* input[type="text"],
-    input[type="email"], 
-    textarea {
-        border-color: #333;
-    } */
-
-    .flex-columns .column {
+    #about.flex-grid .column-1,
+    #about.flex-grid .column-2 {
         flex: 100%;
-        max-width: 100%;
-    }
-    
-    .flex-columns img {
-        padding: 15px;
+        max-width: 100vw;
     }
 
-    .flex-columns p {
-        margin-top: 0;
-    }
-
-    .flex-grid .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .flex-grid .row {
-        padding: 0 0;
-    }
-
-    .portfolio .row > * {
-        /* border: 1px solid green; */
-        padding-bottom: 35px;
-        /* padding-left: 20px;
-        padding-right: 20px; */
-    }
-
-    .contact {
-        padding: 0 20px;
+    #about.flex-grid .column-1 {
         padding-bottom: 25px;
+        margin-right: 0 !important;
     }
-    
-    .contact .container-contact p {
-        text-align: center;
-        /* font-size: 16px; */
+
+    .column-1 img {
+        /* нужно ли использовать object-fit здесь ? */
+        /* object-fit:inherit; */
+        /* object-fit: fill; */
+    }
+
+    /* Previos work */
+    #portfolio {
+        padding-top: 0px !important;
+        /* border: 1px solid red; */
+    }
+
+    #portfolio.flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 0 45px 0;
+        /* border: 1px solid green; */
+    }
+
+    #portfolio.flex-grid .row {
+        padding: 0 !important;
+    }
+
+    #portfolio .section-header {
+        margin-bottom: 10px;
+    }
+
+    /* Contact */
+    #contact {
+        padding-top: 0px !important;
+        /* border: 1px solid orange; */
+    }
+
+    .contact .container-contact {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    #contact .section-header {
+        margin-bottom: 5px;
     }
 
     .callback-form input,
     .callback-form textarea,
     .callback-form .btn-submit {
-        width: 80vw;
-        line-height: 1.7rem;
+        width: 90vw;
+        line-height: 1.5; /* line-height: 1.7rem; */
     }
 
-    /* .callback-form input,
-    .callback-form textarea,
-    .callback-form .btn-submit {
-        resize: none;
-    } */
-
+    /* Footer */
     .footer-container .logo-footer {
         width: 55%;
     }
 
-    .footer-container .footer-copyright p {
+    .footer-container .footer-copyright p,
+    .footer-container .footer-copyright .developer p {
+        display: flex;
         font-size: 10px;
+        line-height: 0.3;
+        padding-bottom: 0 !important;
+    }
+
+    .footer-copyright {
+        padding-bottom: 10px;
     }
 
     .footer-container .footer-email a {
