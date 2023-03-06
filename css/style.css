@@ -21,35 +21,39 @@ ul {
 a {
     text-decoration: none;
     cursor: pointer;
-    /* font-size: 14px; */
     font-weight: 400;
     font-size:larger;
     font-style: normal;
 }
 
 p {
-    font-size: 18px; /* test */
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 h1 {
-    font-size: 40px; /* 2.5rem */
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 24px; /* 1.5rem */
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 h3 {
-    font-size: 18.72px; /* 1.17em or 1rem */
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 h4 {
-    font-size: 16px; /* 0.85rem */
+    font-size: 16px; 
+    text-transform: uppercase;
 }
 
 h6 {
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 img {
@@ -57,26 +61,12 @@ img {
 }
 
 .section-header {
-    padding: 30px;
     /* border: 2px solid orange; */
-    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-}
-
-/* ??? .section-padding {
-    padding: top-bottom
-    padding-top: 15px;
-    border: 3px dotted red;
-} ??? */
-
-/* Header */
-.hero {
-    position: relative;
-    z-index: 1000;
 }
 
 /* Navbar */
@@ -89,17 +79,18 @@ img {
 }
 
 #navbar {
-    display: block;
-    padding: 0 20px;
-    width: 100%;
     position: fixed;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    padding: 22px 20px 0px 20px;
+    background-color: #fff;
     /* border: 1px solid red; */
 }
 
 .navbar-top {
     display: block;
-    background-color: #fff;
-    padding: 22px 0;
+    padding-bottom: 20px;
     /* border: 1px solid blue; */
 }
 
@@ -127,29 +118,30 @@ img {
     /* border: 1px solid gray; */
 }
 
-.navbar-top .motto h4 {
-    color: #283238; /* don't work*/
+.navbar-top .motto h2 {
+    color: #495b67;
+    font-weight: 400; 
+    font-size: 28px;
     /* border: 1px solid orange; */
 }
 
 .navbar-down {
     display: inline-block;
-    background-color: #fff;
     width: 100%;
-    padding-bottom: 6px;
     /* border: 1px solid green; */
 }
 
 .navbar-down .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 nav .container-list {
     display: flex;
     justify-content: center;
-    width: 40vw;
+    width: 35vw;
+    /* border: 2px solid blue; */
 }
 
 nav .container-list ul {
@@ -166,15 +158,13 @@ nav .container-list ul li {
     align-items: center;
     padding: 0;
     margin: 0;
+    line-height: 0.7; /* позволяет сузить бэкграунд для active */
 }
 
 nav .container-list ul li a {
     display: flex;
     text-transform: uppercase;
     padding: 12px;
-    /* font-weight: 400;
-    font-size: small;
-    font-style: normal; */
     color: black;
 }
 
@@ -187,79 +177,63 @@ li.navbar-icon.contact-link a img {
 }
 
 nav .container-list ul li.active {
-    background: rgba(121, 142, 153, 0.7); /* change background-image opacity in css without affecting text */
+    background: rgba(121, 142, 153, 0.3); /* change background-image opacity in css without affecting text */
 }
 
 .navbar-down .menu .line {
     display: flex;
-    width: 30vw; 
+    /* width: 30vw;  */
+    width: 45vw;
     border: .85px solid #0a0a0a;;
     box-shadow: 1px 2px 5px #99b3c0;
+    /* box-shadow: 1px 2px 5px #d7dde0; альтернатива */
     margin-left: auto 5px;
     margin-right: auto 5px;
 }
 
 /* About */
-.container-about {
+.about {
     margin: 0 20px;
+    /* padding-top: 335px; */
     /* border: 3px solid green; */
-    padding: 10px 0;
+    padding-top: 320px;
+    
 }
 
-.flex-columns .row {
+#about.flex-grid .row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    padding: 30px 0;
 }
 
-.flex-columns .column {
-    /* display: flex;
-    flex-direction: column; */
-    flex-basis: 100%;
-    flex: 1;
+.flex-grid .column-1 {
+    flex: 60%;
+    max-width: 42%;
+    margin-right: 40px;    
 }
 
-.flex-columns .column .column-1,
-.flex-columns .column .column-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* justify-content: center; */
-    /* justify-content: flex-start; */
-    height: 100%;
-    padding: 5px;
+.column-1 img {
+    border-radius: 5px;
 }
 
-.flex-columns img {
-    width: 100%;
-    height: 100%;
-    /* width: 80%;
-    height: fit-content; */
-    object-fit: cover;
-}
-
-.flex-columns p {
-    /* margin: 20px 0; */
-    /* font-size: 12px;  разкоментировать */
-    /* font-weight: 200; */
-    font-family: 'Raleway', sans-serif;
-    color: black;
+.flex-grid .column-2 {
+    flex: 40%;
+    max-width: 30%;
 }
 
 /* Previos work */
 .portfolio {
     margin: 0 20px;
+    padding: 10px 0; /* was: 30px 0*/
     /* border: 3px solid red; */
-    /* padding-top: 120px; */
-    padding-top: 98px;
 }
 
-.flex-grid .row {
+#portfolio.flex-grid .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 12px;
+    padding: 15px 0px !important;
 }
 
 .flex-grid .column {
@@ -269,23 +243,17 @@ nav .container-list ul li.active {
     padding: 0px 12px;
 }
 
-/* .flex-grid .column img {
-    border: 3px solid green;
-    max-height: 65%;
-    max-width: fit-content;
-} */
-
 /* Contact */
 .contact {
     display: block;
     padding-bottom: 50px;
     margin: 0 20px;
+    padding-top: 15px;
     /* border: 3px solid blueviolet; */
-    padding-top: 120px;
 }
 
 .container-contact p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .container-contact p,
@@ -302,8 +270,7 @@ nav .container-list ul li.active {
 .callback-form label {
     display: block;
     margin-top: 10px;
-    font-size: 14px;
-    /* color: #9c9a9a; */
+    font-size: 18px;
     color: #283238;
 }
 
@@ -315,8 +282,6 @@ nav .container-list ul li.active {
 .callback-form textarea {
     width: 50vw; /* 50% */
     border: 1px #ddd solid;
-    /* background-color: #ededed; */
-    /* background: rgba(114, 116, 115, 0.3); */
     background: rgb(209, 210, 210, 0.3);
     padding: 8px;
     font-size: 18px;
@@ -330,14 +295,12 @@ nav .container-list ul li.active {
 .callback-form .btn-submit {
     margin-top: 15px;
     padding: 10px 0;
-    /* background-color: #4c4c4c; */
-    background-color: #283238;  /* option ?*/
-    /* background-color: #495b67; option ?*/
+    background-color: #283238; 
     border: transparent;
     color: #fff;
     width: 50vw;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* Footer */
@@ -347,8 +310,7 @@ nav .container-list ul li.active {
 }
 
 .footer .footer-container {
-    /* background-color: #ededed; */
-    background: rgba(121, 142, 153, 0.7);
+    background: rgba(121, 142, 153, 0.3);
     padding: 28px 15px 3px 32px;
 }
 
@@ -361,7 +323,6 @@ nav .container-list ul li.active {
 }
 
 .footer-container .footer-email a {
-    /* color: #628696; */
     color: #283238;
 }
 
@@ -378,9 +339,6 @@ nav .container-list ul li.active {
 }
 
 .social h4 {
-    /* font-style: normal;
-    font-weight: 400;
-    font-size: small; */
     text-transform: uppercase;
     font-size: 14px; 
     font-weight: 600; 
@@ -400,8 +358,8 @@ nav .container-list ul li.active {
 
 .footer-container .footer-copyright p {
     font-size: 14px;
-    padding: 10px 0 10px 0;
-    /* color: #4c4c4c; */
+    /* padding: 10px 0 10px 0; */
+    padding: 10px 0;
     color: #283238;
 }
 
@@ -533,10 +491,6 @@ nav .container-list ul li.active {
         font-size: 14px;
     }
 
-    /* ??? .section-padding {
-        padding: 0 30px;
-    } ??? */
-
     .section-header {
         padding-top: 0px;
         margin-bottom: 25px;
@@ -644,10 +598,6 @@ nav .container-list ul li.active {
     .contact .callback-form form button {
         font-size: 14px;
     }
-
-    /* ??? .section-padding {
-        padding: 0 30px;
-    } ??? */
 
     .section-header {
         margin-bottom: 25px;
@@ -892,10 +842,6 @@ nav .container-list ul li.active {
         border: .85px solid #0a0a0a;;
         box-shadow: 1px 2px 5px #99b3c0;
     }
-
-    /* .section-padding {
-        border: 1px solid red;
-    } */
 
     #about {
         padding-top: 140px !important;
