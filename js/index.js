@@ -8,23 +8,32 @@ $('#navbar a').on('click', function (e) {
         $('html, body').animate(
             {
                 scrollTop: $(hash).offset().top - 100,
+                // scrollTop: $(hash).offset().top - 260,                
             },
             800
         );
     }
 });
 
+// $(".navbar-down a").click(function(){
+//     $("body,html").animate({
+//      scrollTop:$("#" + $(this).data('value')).offset().top
+//     },1000)
+    
+//    })
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container-list ul li");
 window.addEventListener('scroll', () => {
     let current = "";
-    // console.log(pageYOffset);
+    // console.log(`scrollY: ${scrollY}`);
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        // console.log(sectionTop); // 0 - about, 831 - projects, 2213 - contact;
+        // console.log(sectionTop); // 0 - about, 946 - projects, 2379 - contact;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        // if (pageYOffset >= (sectionTop - sectionHeight / 3)) { - pageYOffset - deprecated
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {            
             current = section.getAttribute('id');
         }
     });
