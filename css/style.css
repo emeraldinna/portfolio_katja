@@ -864,6 +864,12 @@ nav .container-list ul li.active {
         margin-right: 0 !important;
     }
 
+    #about.flex-grid .column-2 p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+    }
+
     .column-1 img {
         /* нужно ли использовать object-fit здесь ? */
         /* object-fit:inherit; */
@@ -881,6 +887,17 @@ nav .container-list ul li.active {
         max-width: 100%;
         padding: 0 0 45px 0;
         /* border: 1px solid green; */
+    }
+
+    #portfolio.flex-grid .column p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+    }
+
+    #portfolio.flex-grid .column h4 {
+        font-size: 16px;
+        color: black;
     }
 
     #portfolio.flex-grid .row {
@@ -902,6 +919,10 @@ nav .container-list ul li.active {
         width: 100%;
     }
 
+    .contact .container-contact p {
+        font-weight: bold;
+    }
+
     #contact .section-header {
         margin-bottom: 5px;
     }
@@ -911,6 +932,10 @@ nav .container-list ul li.active {
     .callback-form .btn-submit {
         width: 90vw;
         line-height: 1.5; /* line-height: 1.7rem; */
+    }
+
+    .callback-form label {
+        color: black;
     }
 
     /* Footer */
