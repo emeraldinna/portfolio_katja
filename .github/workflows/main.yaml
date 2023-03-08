@@ -53,7 +53,7 @@ jobs:
           webdav_address: ${{secrets.WEBDAV_ADDRESS}}
           webdav_username: ${{secrets.WEBDAV_USERNAME}}
           webdav_password: ${{secrets.WEBDAV_PASSWORD}}
-          webdav_upload_path: ${{secrets.WEBDAV_UPLOAD_PATH}}/js
+          webdav_upload_path: ${{secrets.WEBDAV_UPLOAD_PATH}}
           files: |
             favicon.ico
             android-chrome-192x192.png
