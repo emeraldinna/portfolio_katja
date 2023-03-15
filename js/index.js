@@ -7,7 +7,8 @@ $('#navbar a').on('click', function (e) {
 
         $('html, body').animate(
             {
-                scrollTop: $(hash).offset().top - 100,
+                scrollTop: $(hash).offset().top,
+                // scrollTop: $(hash).offset().top -100,
                 // scrollTop: $(hash).offset().top - 260,                
             },
             800
@@ -50,4 +51,24 @@ window.addEventListener('scroll', () => {
 
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
+}
+
+// Get the button
+let mybutton = document.getElementById("scrollUpArrow");
+
+// When the user scrolls down 45px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
