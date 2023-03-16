@@ -389,7 +389,7 @@ nav .container-list ul li.active {
 }
 
 /* Mobile */
-/* @media(max-width: 1450px  between 1024-1450px ДОДЕЛАТЬ!*/ 
+/* @media(max-width: 1450px  between 1024-1450px*/ 
 @media(max-width: 1440px) { 
     h2 {
         font-size: 22px;
@@ -443,7 +443,7 @@ nav .container-list ul li.active {
     }    
 }
 
-/* @media(max-width: 1024px  between 821-1024px ГОТОВО! */
+/* @media(max-width: 1024px  between 821-1024px */
 @media(max-width: 1024px) {
     h2 {
         font-size: 18px;
@@ -896,13 +896,13 @@ nav .container-list ul li.active {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+/* body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+} */
 
