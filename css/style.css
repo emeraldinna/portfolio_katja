@@ -75,7 +75,6 @@ img {
 }
 
 .section-header {
-    /* border: 2px solid orange; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,19 +92,15 @@ img {
 }
 
 #navbar {
-    /* position: fixed;
-    z-index: 1000; */
     display: block;
     width: 100%;
     padding: 22px 20px 0px 20px;
     background-color: #fff;
-    /* border: 1px solid red; */
 }
 
 .navbar-top {
     display: block;
     padding-bottom: 20px;
-    /* border: 1px solid blue; */
 }
 
 .navbar-top .logo {
@@ -114,13 +109,10 @@ img {
     align-items: center;
     justify-content: center;
     margin-bottom: 0px;
-    /* border: 1px solid red; */
 }
 
-/* задаёт размер для лого */
 .logo a {
     width: 30vw;
-    /* border: 1px solid green; */
 }
 
 .navbar-top .motto {
@@ -128,20 +120,17 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid gray; */
 }
 
 .navbar-top .motto h2 {
     color: #495b67;
     font-weight: 400; 
     font-size: 28px;
-    /* border: 1px solid orange; */
 }
 
 .navbar-down {
     display: inline-block;
     width: 100%;
-    /* border: 1px solid green; */
 }
 
 .navbar-down .menu {
@@ -154,12 +143,10 @@ nav .container-list {
     display: flex;
     justify-content: center;
     width: 35vw;
-    /* border: 2px solid blue; */
 }
 
 nav .container-list ul {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -171,7 +158,7 @@ nav .container-list ul li {
     align-items: center;
     padding: 0;
     margin: 0;
-    line-height: 0.7; /* позволяет сузить бэкграунд для active */
+    line-height: 0.7;
 }
 
 nav .container-list ul li a {
@@ -190,16 +177,14 @@ li.navbar-icon.contact-link a img {
 }
 
 nav .container-list ul li.active {
-    background: rgba(121, 142, 153, 0.3); /* change background-image opacity in css without affecting text */
+    background: rgba(121, 142, 153, 0.3);
 }
 
 .navbar-down .menu .line {
     display: flex;
-    /* width: 30vw;  */
     width: 45vw;
     border: .85px solid #0a0a0a;;
     box-shadow: 1px 2px 5px #99b3c0;
-    /* box-shadow: 1px 2px 5px #d7dde0; альтернатива */
     margin-left: auto 5px;
     margin-right: auto 5px;
 }
@@ -207,10 +192,6 @@ nav .container-list ul li.active {
 /* About */
 .about {
     margin: 0 20px;
-    /* padding-top: 335px; */
-    /* border: 3px solid green; */
-    /* padding-top: 320px; */
-    
 }
 
 #about.flex-grid .row {
@@ -238,8 +219,7 @@ nav .container-list ul li.active {
 /* Previos work */
 .portfolio {
     margin: 0 20px;
-    padding: 10px 0; /* was: 30px 0*/
-    /* border: 3px solid red; */
+    padding: 10px 0;
 }
 
 #portfolio.flex-grid .row {
@@ -261,7 +241,6 @@ nav .container-list ul li.active {
     padding-bottom: 50px;
     margin: 0 20px;
     padding-top: 15px;
-    /* border: 3px solid blueviolet; */
 }
 
 .container-contact p {
@@ -292,7 +271,7 @@ nav .container-list ul li.active {
 
 .callback-form input,
 .callback-form textarea {
-    width: 50vw; /* 50% */
+    width: 50vw;
     border: 1px #ddd solid;
     background: rgb(209, 210, 210, 0.3);
     padding: 8px;
@@ -318,7 +297,6 @@ nav .container-list ul li.active {
 /* Footer */
 .footer {
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 .footer .footer-container {
@@ -372,7 +350,6 @@ nav .container-list ul li.active {
 .footer-container .footer-copyright .developer p {
     display: inline;
     font-size: 14px;
-    /* padding: 10px 0 10px 0; */
     padding: 10px 0;
     color: #283238;
 }
@@ -395,13 +372,8 @@ nav .container-list ul li.active {
         font-size: 22px;
     }
 
-    .logo a {
-        /* border: 1px solid green; */
-    }
-    
     .navbar-top .motto h2 {
         font-size: 22px;
-        /* border: 1px solid orange; */
     }
 
     nav .container-list {
@@ -434,10 +406,6 @@ nav .container-list ul li.active {
         height: 20px;
     }
 
-    /* .footer-container .social h4 {
-        font-size: small;
-    } */
-
     .footer-container .footer-copyright p {
         font-size: 12px;
     }    
@@ -462,15 +430,12 @@ nav .container-list ul li.active {
         font-size: 14px;
     }
 
-    /* задаёт размер для лого */
     .logo a {
         width: 35vw;
-        /* border: 1px solid green; */
     }
 
     .navbar-top .motto h2 {
         font-size: 20px;
-        /* border: 1px solid orange; */
     }
     
     nav .container-list {
@@ -486,14 +451,8 @@ nav .container-list ul li.active {
     }
     
     #about.flex-grid .row {
-        /* border: 1px solid green; */
         padding: 15px 0 !important;
     }
-
-    /* #about.flex-grid .column-1,
-    #about.flex-grid .column-2 {
-        border: 1px solid red;
-    } */
 
     #about.flex-grid .column-1 {
         flex: 50%;
@@ -507,22 +466,16 @@ nav .container-list ul li.active {
     }
 
     #portfolio.flex-grid .row {
-        /* border: 1px solid green; */
         justify-content: space-between;
     }
 
     #portfolio.flex-grid .row .column {
-        /* border: 1px solid red; */
         flex: 33%;
         max-width: 32%;
         padding-left: 0;
         padding-right: 0;
         justify-content: space-between;
     }
-
-    /* #contact {
-        border: 1px solid green;
-    } */
 
     .contact .container-contact p {
         font-size: 18px;
@@ -640,7 +593,6 @@ nav .container-list ul li.active {
 
     /* Navbar */
     #navbar {
-        /* border: 1px solid red; */
         padding: 0 20px 5px 20px;
         position: fixed;
         z-index: 1000;
@@ -656,30 +608,25 @@ nav .container-list ul li.active {
         flex-direction: row;
         padding-top: 10px;
         padding-bottom: 5px;
-        /* border: 1px solid green; */
     }
 
     #brand {
         display: block;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid red; */
     }
 
     #brand .logo {
         display: flex;
     }
     
-    /* задаёт размер для лого */
     #brand .logo a {
-        width: 80vw; /* was 70vw */
-        /* border: 1px solid green; */
+        width: 80vw;
     }
     
     #brand .motto {
         display: flex;
         flex-direction: row;
-        /* border: 1px solid gray; */
     }
 
     #brand .motto h2 {
@@ -689,9 +636,6 @@ nav .container-list ul li.active {
     #hamburger-icon {
         display: block;
         padding-left: 10px;
-        /* width: 20%;  if needed? */ 
-        /* margin: 0;  if needed? */
-        /* border: 1px solid orange; */
     }
     
     #hamburger-icon div {
@@ -712,13 +656,11 @@ nav .container-list ul li.active {
     .mobile-menu {
         display: none;
         position: absolute;
-        /* top: 130px; */
         top: 150px;
         left: 0;
         height: calc(100vh - 150px);
         width: 100%;
         background-color: white;
-        /* border: 2px solid green; */
     }
     
     .mobile-menu li {
@@ -752,7 +694,7 @@ nav .container-list ul li.active {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 55px; /* опустить вниз список */
+        padding-top: 55px;
     }
 
     .open .mobile-menu li:hover {
@@ -764,17 +706,21 @@ nav .container-list ul li.active {
         border-bottom: 2px solid #495b67;
     }
 
+    .open .mobile-menu li.active {
+        border-bottom: 2px solid #495b67;
+        background: none;
+    }
+
     #navbar .line-mobile-devices {
         display: flex;
         width: 100%;
-        border: .85px solid #0a0a0a;;
+        border: .85px solid #0a0a0a;
         box-shadow: 1px 2px 5px #99b3c0;
     }
 
     /* About */
     #about {
         padding-top: 165px !important;
-        /* border: 1px solid blue; */
     }
 
     #about.flex-grid .row {
@@ -798,23 +744,15 @@ nav .container-list ul li.active {
         color: black;
     }
 
-    .column-1 img {
-        /* нужно ли использовать object-fit здесь ? */
-        /* object-fit:inherit; */
-        /* object-fit: fill; */
-    }
-
     /* Previos work */
     #portfolio {
         padding-top: 0px !important;
-        /* border: 1px solid red; */
     }
 
     #portfolio.flex-grid .row .column {
         flex: 100%;
         max-width: 100%;
         padding: 0 0 45px 0;
-        /* border: 1px solid green; */
     }
 
     #portfolio.flex-grid .column p {
@@ -839,7 +777,6 @@ nav .container-list ul li.active {
     /* Contact */
     #contact {
         padding-top: 0px !important;
-        /* border: 1px solid orange; */
     }
 
     .contact .container-contact {
@@ -859,7 +796,7 @@ nav .container-list ul li.active {
     .callback-form textarea,
     .callback-form .btn-submit {
         width: 90vw;
-        line-height: 1.5; /* line-height: 1.7rem; */
+        line-height: 1.5;
     }
 
     .callback-form label {
@@ -889,20 +826,8 @@ nav .container-list ul li.active {
     }
 
     .footer-container .footer-email a {
-        /* font-weight: 400; */
         font-size: medium;
     }
 
 }
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-/* body::-webkit-scrollbar {
-    display: none;
-} */
-
-/* Hide scrollbar for IE, Edge and Firefox */
-/* body {
-  -ms-overflow-style: none;  
-  scrollbar-width: none; 
-} */
 

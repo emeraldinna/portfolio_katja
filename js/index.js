@@ -1,5 +1,5 @@
 // Smooth Scrolling
-$('#navbar a').on('click', function (e) {
+$('nav .container-list a').on('click', function (e) {    
     if (this.hash !== '') {
         e.preventDefault();
 
@@ -8,32 +8,36 @@ $('#navbar a').on('click', function (e) {
         $('html, body').animate(
             {
                 scrollTop: $(hash).offset().top,
-                // scrollTop: $(hash).offset().top -100,
-                // scrollTop: $(hash).offset().top - 260,                
             },
             800
         );
     }
 });
 
-// $(".navbar-down a").click(function(){
-//     $("body,html").animate({
-//      scrollTop:$("#" + $(this).data('value')).offset().top
-//     },1000)
-    
-//    })
+// Smooth Scrolling Mobile
+$('#hamburger-icon ul li a').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top - 160,
+            },
+            800
+        );
+    }
+});
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container-list ul li");
 window.addEventListener('scroll', () => {
     let current = "";
-    // console.log(`scrollY: ${scrollY}`);
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        // console.log(sectionTop); // 0 - about, 946 - projects, 2379 - contact;
         const sectionHeight = section.clientHeight;
-        // if (pageYOffset >= (sectionTop - sectionHeight / 3)) { - pageYOffset - deprecated
         if (scrollY >= (sectionTop - sectionHeight / 3)) {            
             current = section.getAttribute('id');
         }
@@ -48,7 +52,29 @@ window.addEventListener('scroll', () => {
 
 });
 
+const sectionsMobile = document.querySelectorAll("section");
+const navLiMobile = document.querySelectorAll("#hamburger-icon ul li");
+window.addEventListener('scroll', () => {
+    let current = "";
 
+    sectionsMobile.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {            
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLiMobile.forEach((li) => {
+        li.classList.remove('active');
+        if (li.classList.contains(current)) {
+            li.classList.add('active');
+        }
+    });
+
+});
+
+// Open nav menu on mobile devices
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
@@ -71,4 +97,11 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// Clear the form
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
 }
