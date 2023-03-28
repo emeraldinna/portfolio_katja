@@ -411,7 +411,7 @@
             <div class="container-contact">           
                 <p>Please use the form below to contact me</p>
                 <div class="callback-form">
-                    <form action="https://getform.io/f/96dfdebd-efb5-43db-84ee-bcc7e45d1484" method="POST">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="form-group">
                             <label for="name">Name*</label>
                             <input type="text" name="name" minlength="2" maxlength="30" required>
@@ -424,9 +424,8 @@
                             <label for="message">Message*</label>
                             <textarea name="message" minlength="2" maxlength="3000" required></textarea>
                         </div>
-                        <input type="hidden" name="_gotcha" style="display:none !important">
                         <button type="submit" class="btn-submit">Send</button>
-                    </form>
+                    </form>                    
                 </div>                    
             </div>
         </section>
