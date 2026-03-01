@@ -60,11 +60,15 @@
         if (!ticking) {
             requestAnimationFrame(function () {
                 var current = '';
+                var isMobile = window.innerWidth <= 576;
+                var headerOffset = isMobile ? 160 : 0;
 
                 sections.forEach(function (section) {
                     var sectionTop = section.offsetTop;
-                    var sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                    // On mobile, use fixed threshold to avoid giant stacked sections
+                    // skewing the calculation (portfolio height >> viewport height)
+                    var threshold = isMobile ? headerOffset + 50 : section.clientHeight / 3;
+                    if (window.scrollY >= sectionTop - threshold) {
                         current = section.getAttribute('id');
                     }
                 });

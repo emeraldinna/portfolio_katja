@@ -393,6 +393,23 @@ nav .container-list ul li.active {
     color: var(--color-primary);
 }
 
+/* GLightbox mobile overrides — keep arrows visible on touch devices */
+@media (pointer: coarse) {
+    .glightbox-clean .gnext,
+    .glightbox-clean .gprev {
+        display: flex !important;
+        opacity: 0.7;
+        width: 40px;
+        height: 50px;
+    }
+
+    .glightbox-clean .gclose {
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+    }
+}
+
 /* Image */
 .myImg {
     border-radius: 5px;
