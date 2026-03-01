@@ -3,34 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="interior design, designer, portfolio, katja karling, scandinavian design, scandinavian interior design">
-    <meta name="description" content="portfolio site katja karling">
+    <meta name="description" content="Katja Karling is a Stockholm-based interior decorator specialising in Scandinavian design. View her portfolio of residential projects at Monogram design studio.">
+    <meta property="og:title" content="Katja Karling — Interior Decoration and Styling">
+    <meta property="og:description" content="Stockholm-based interior decorator specialising in Scandinavian design. View portfolio of residential projects at Monogram design studio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://katjakarling.se">
+    <meta property="og:image" content="https://katjakarling.se/assets/Katja_Karling.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">    
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Katja Karling</title>
 </head>
 
 <body id="home">
-    <header>        
+    <a href="#about" class="skip-link">Skip to content</a>
+    <header>
         <div id="navbar">
             <div class="navbar-top">
                 <div id="brand">
                     <div class="logo">
                         <a href="#home">
-                            <img src="/assets/logo.name.svg">
+                            <img src="/assets/logo.name.svg" alt="Katja Karling">
                         </a>
-                    </div>                
+                    </div>
                     <div class="motto">
-                        <h2>INTERIOR DECORATION AND STYLING</h2> 
+                        <h2>INTERIOR DECORATION AND STYLING</h2>
                     </div>
                 </div>
-                <div id="hamburger-icon" onclick="toggleMobileMenu(this);">
+                <div id="hamburger-icon">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -50,18 +58,18 @@
                             <li class="portfolio"><a href="#portfolio">portfolio</a></li>
                             <li class="contact"><a href="#contact">contact</a></li>
                             <li class="navbar-icon">
-                                <a href="https://www.instagram.com/katja_karling/" target="_blank">
-                                    <img src="/assets/instagram.svg">
+                                <a href="https://www.instagram.com/katja_karling/" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/instagram.svg" alt="Instagram">
                                 </a>
                             </li>
                             <li class="navbar-icon">
-                                <a href="https://www.facebook.com/katja.karling" target="_blank">
-                                    <img src="/assets/square-facebook.svg">
+                                <a href="https://www.facebook.com/katja.karling" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/square-facebook.svg" alt="Facebook">
                                 </a>
                             </li>
                             <li class="navbar-icon contact-link">
-                                <a href="mailto:monogram.mail@gmail.com" target="_blank">
-                                    <img src="/assets/envelope-regular.svg">
+                                <a href="mailto:monogram.mail@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/envelope-regular.svg" alt="Email">
                                 </a>
                             </li>
                         </ul>
@@ -74,8 +82,8 @@
     </header>
 
     <div id="scrollUpArrow">
-        <a href="#" onclick="topFunction()" title="Go to top" >
-            <img src="/assets/circle-arrow-up-solid.svg">
+        <a href="#" title="Go to top">
+            <img src="/assets/circle-arrow-up-solid.svg" alt="Scroll to top">
         </a>
     </div>
 
@@ -84,28 +92,28 @@
         <section id="about" class="about flex-grid">
             <div class="row">
                 <div class="column-1">
-                    <img src="/assets/Katja_Karling.jpg" alt="Katja Karling">                            
+                    <img src="/assets/Katja_Karling.jpg" alt="Katja Karling">
                 </div>
-                <div class="column-2"> 
+                <div class="column-2">
                     <p>
                         Katja Karling is an interior decorator and founder of Monogram design studio (Stockholm, Sweden).
                     </p><br>
-                    <p> 
-                        Katja has two decades of expertise in Scandinavian design that follow her background in graphic 
-                        design and photography. Using this knowledge combined with her eye for proportion, colour and material, 
-                        she creates beautiful comfortable interiors. Her approach is based on a collaborative process resulting 
+                    <p>
+                        Katja has two decades of expertise in Scandinavian design that follow her background in graphic
+                        design and photography. Using this knowledge combined with her eye for proportion, colour and material,
+                        she creates beautiful comfortable interiors. Her approach is based on a collaborative process resulting
                         in rooms that reflect the uniqueness of each client.
                     </p><br>
                     <p>
                         Katja was a contributing editor to the Russian edition of The Interior Design Handbook by Frida Ramstedt.
                     </p><br>
                     <p>
-                        She is a member of the Swedish Society of Crafts and Design (Svensk Form) and travels internationally 
-                        for speaking engagements.                                    
+                        She is a member of the Swedish Society of Crafts and Design (Svensk Form) and travels internationally
+                        for speaking engagements.
                     </p>
                 </div>
             </div>
-        </section>        
+        </section>
 
         <!-- Previous work -->
         <section id="portfolio" class="portfolio flex-grid">
@@ -114,292 +122,168 @@
             </header>
             <div class="row">
                 <div class="column">
-                    <a href="/assets/living_room/01.jpg" data-lightbox="living_room" data-title="">
-                        <img src="/assets/living_room/01.jpg" alt="Living Room" class="myImg">
+                    <a href="/assets/living_room/01.jpg" class="glightbox" data-gallery="living_room">
+                        <img src="/assets/living_room/01.jpg" alt="Living Room" class="myImg" loading="lazy">
                     </a>
                     <h4>Living Room / Eucalypt Green</h4>
-                    <p>The family of four moved into a new flat bringing their existing furniture. The parents and two 
-                        teenage children often spend time together to watch films or play board games sitting on two 
-                        roomy sofas. The family enjoys cooking and likes to entertain their guests at a welcoming dining 
-                        table. My assignment was to make this room the heart of their home by filling it with colour and 
-                        adding some complementary pieces of furniture. 
+                    <p>The family of four moved into a new flat bringing their existing furniture. The parents and two
+                        teenage children often spend time together to watch films or play board games sitting on two
+                        roomy sofas. The family enjoys cooking and likes to entertain their guests at a welcoming dining
+                        table. My assignment was to make this room the heart of their home by filling it with colour and
+                        adding some complementary pieces of furniture.
                     </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
                     <div>
-                        <div style="display: none;">                    
-                            <a href="/assets/living_room/02.jpg" data-lightbox="living_room" data-title="After">
-                                <img src="/assets/living_room/02.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/03.jpg" data-lightbox="living_room" data-title="Before">
-                                <img src="/assets/living_room/03.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/04.jpg" data-lightbox="living_room" data-title="After">
-                                <img src="/assets/living_room/04.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/05.jpg" data-lightbox="living_room" data-title="Before">
-                                <img src="/assets/living_room/05.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/06.jpg" data-lightbox="living_room" data-title="After">
-                                <img src="/assets/living_room/06.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/07.jpg" data-lightbox="living_room" data-title="Before">
-                                <img src="/assets/living_room/07.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/08.jpg" data-lightbox="living_room" data-title="After">
-                                <img src="/assets/living_room/08.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/09.jpg" data-lightbox="living_room" data-title="Before">
-                                <img src="/assets/living_room/09.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/10.jpg" data-lightbox="living_room" data-title="">
-                                <img src="/assets/living_room/10.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/11.jpg" data-lightbox="living_room" data-title="">
-                                <img src="/assets/living_room/11.jpg" alt="Living Room">
-                            </a> 
-                            <a href="/assets/living_room/12.jpg" data-lightbox="living_room" data-title="">
-                                <img src="/assets/living_room/12.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/13.jpg" data-lightbox="living_room" data-title="">
-                                <img src="/assets/living_room/13.jpg" alt="Living Room">
-                            </a>
-                            <a href="/assets/living_room/14.jpg" data-lightbox="living_room" data-title="">
-                                <img src="/assets/living_room/14.jpg" alt="Living Room">
-                            </a>                                                                                                                                                                                                                                                           
-                        </div>
-                    </div>    
-                </div>
-
-                <div class="column">
-                    <a href="/assets/master_bedroom/01.jpg" data-lightbox="master_bedroom" data-title="">
-                        <img src="/assets/master_bedroom/01.jpg" alt="Master Bedroom" class="myImg">
-                    </a>
-                    <h4>Master Bedroom / Salt Caramel</h4>
-                    <p>The function of this room has been extended from parents' bedroom to include a home office, a versatile 
-                        combination that became relevant during the pandemic. Warm caramel tones create a feeling of comfort 
-                        and peace. The blinds can cover either the upper or the lower half of the window providing both privacy 
-                        and daylight, or the entire window as desired.
-                    </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>                    
-                    <div>
-                        <div style="display: none;">
-                            <a href="/assets/master_bedroom/02.jpg" data-lightbox="master_bedroom" data-title="After">
-                                <img src="/assets/master_bedroom/02.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/03.jpg" data-lightbox="master_bedroom" data-title="Before">
-                                <img src="/assets/master_bedroom/03.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/04.jpg" data-lightbox="master_bedroom" data-title="After">
-                                <img src="/assets/master_bedroom/04.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/05.jpg" data-lightbox="master_bedroom" data-title="Before">
-                                <img src="/assets/master_bedroom/05.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/06.jpg" data-lightbox="master_bedroom" data-title="After">
-                                <img src="/assets/master_bedroom/06.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/07.jpg" data-lightbox="master_bedroom" data-title="Before">
-                                <img src="/assets/master_bedroom/07.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/08.jpg" data-lightbox="master_bedroom" data-title="After">
-                                <img src="/assets/master_bedroom/08.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/09.jpg" data-lightbox="master_bedroom" data-title="Before">
-                                <img src="/assets/master_bedroom/09.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/10.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/10.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/12.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/12.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/13.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/13.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/14.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/14.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/15.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/15.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/16.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/16.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/17.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/17.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/18.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/18.jpg" alt="Master Bedroom">
-                            </a>
-                            <a href="/assets/master_bedroom/19.jpg" data-lightbox="master_bedroom" data-title="">
-                                <img src="/assets/master_bedroom/19.jpg" alt="Master Bedroom">
-                            </a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                        </div>
-                    </div>                        
-                </div>
-
-                <div class="column">
-                    <a href="/assets/children_bedroom_1/01.jpg" data-lightbox="bedroom_1" data-title="">
-                        <img src="/assets/children_bedroom_1/01.jpg" alt="Girl's Bedroom" class="myImg">
-                    </a>                    
-                    <h4>Girl's Bedroom / Calligraphy</h4>
-                    <p>For this project I developed a concept, chose colour palette and suggested combinations for the furniture, 
-                        light, textile and decoration. The modest space fits everything a teenage girl needs reflecting her interest 
-                        in oriental graphics, calligraphy and Korean pop culture. My brief included a preference for some dark 'enveloping' 
-                        tones. Additional small storage is arranged in the blind zone behind the door while the main wardrobe is located 
-                        in the good-sized corridor.
-                    </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>                                                                
-                    <div>
-                        <div style="display: none;">
-                            <a href="/assets/children_bedroom_1/02.jpg" data-lightbox="bedroom_1" data-title="After">
-                                <img src="/assets/children_bedroom_1/02.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/03.jpg" data-lightbox="bedroom_1" data-title="Before">
-                                <img src="/assets/children_bedroom_1/03.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/04.jpg" data-lightbox="bedroom_1" data-title="After">
-                                <img src="/assets/children_bedroom_1/04.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/05.jpg" data-lightbox="bedroom_1" data-title="Before">
-                                <img src="/assets/children_bedroom_1/05.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/06.jpg" data-lightbox="bedroom_1" data-title="After">
-                                <img src="/assets/children_bedroom_1/06.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/07.jpg" data-lightbox="bedroom_1" data-title="Before">
-                                <img src="/assets/children_bedroom_1/07.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/08.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/08.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/09.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/09.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/10.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/10.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/11.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/11.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/12.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/12.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/13.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/13.jpg" alt="Girl's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_1/14.jpg" data-lightbox="bedroom_1" data-title="">
-                                <img src="/assets/children_bedroom_1/14.jpg" alt="Girl's Bedroom">
-                            </a>                                                                                                                                                                                                                                                                                        
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/living_room/02.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: After"></a>
+                            <a href="/assets/living_room/03.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: Before"></a>
+                            <a href="/assets/living_room/04.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: After"></a>
+                            <a href="/assets/living_room/05.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: Before"></a>
+                            <a href="/assets/living_room/06.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: After"></a>
+                            <a href="/assets/living_room/07.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: Before"></a>
+                            <a href="/assets/living_room/08.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: After"></a>
+                            <a href="/assets/living_room/09.jpg" class="glightbox" data-gallery="living_room" data-glightbox="title: Before"></a>
+                            <a href="/assets/living_room/10.jpg" class="glightbox" data-gallery="living_room"></a>
+                            <a href="/assets/living_room/11.jpg" class="glightbox" data-gallery="living_room"></a>
+                            <a href="/assets/living_room/12.jpg" class="glightbox" data-gallery="living_room"></a>
+                            <a href="/assets/living_room/13.jpg" class="glightbox" data-gallery="living_room"></a>
+                            <a href="/assets/living_room/14.jpg" class="glightbox" data-gallery="living_room"></a>
                         </div>
                     </div>
-                </div>    
+                </div>
+
+                <div class="column">
+                    <a href="/assets/master_bedroom/01.jpg" class="glightbox" data-gallery="master_bedroom">
+                        <img src="/assets/master_bedroom/01.jpg" alt="Master Bedroom" class="myImg" loading="lazy">
+                    </a>
+                    <h4>Master Bedroom / Salt Caramel</h4>
+                    <p>The function of this room has been extended from parents' bedroom to include a home office, a versatile
+                        combination that became relevant during the pandemic. Warm caramel tones create a feeling of comfort
+                        and peace. The blinds can cover either the upper or the lower half of the window providing both privacy
+                        and daylight, or the entire window as desired.
+                    </p>
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
+                    <div>
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/master_bedroom/02.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: After"></a>
+                            <a href="/assets/master_bedroom/03.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bedroom/04.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: After"></a>
+                            <a href="/assets/master_bedroom/05.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bedroom/06.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: After"></a>
+                            <a href="/assets/master_bedroom/07.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bedroom/08.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: After"></a>
+                            <a href="/assets/master_bedroom/09.jpg" class="glightbox" data-gallery="master_bedroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bedroom/10.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/12.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/13.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/14.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/15.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/16.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/17.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/18.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                            <a href="/assets/master_bedroom/19.jpg" class="glightbox" data-gallery="master_bedroom"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <a href="/assets/children_bedroom_1/01.jpg" class="glightbox" data-gallery="bedroom_1">
+                        <img src="/assets/children_bedroom_1/01.jpg" alt="Girl's Bedroom" class="myImg" loading="lazy">
+                    </a>
+                    <h4>Girl's Bedroom / Calligraphy</h4>
+                    <p>For this project I developed a concept, chose colour palette and suggested combinations for the furniture,
+                        light, textile and decoration. The modest space fits everything a teenage girl needs reflecting her interest
+                        in oriental graphics, calligraphy and Korean pop culture. My brief included a preference for some dark 'enveloping'
+                        tones. Additional small storage is arranged in the blind zone behind the door while the main wardrobe is located
+                        in the good-sized corridor.
+                    </p>
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
+                    <div>
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/children_bedroom_1/02.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_1/03.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_1/04.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_1/05.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_1/06.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_1/07.jpg" class="glightbox" data-gallery="bedroom_1" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_1/08.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/09.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/10.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/11.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/12.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/13.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                            <a href="/assets/children_bedroom_1/14.jpg" class="glightbox" data-gallery="bedroom_1"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
                 <div class="column">
-                    <a href="/assets/children_bedroom_2/01.jpg" data-lightbox="bedroom_2" data-title="">
-                        <img src="/assets/children_bedroom_2/01.jpg" alt="Boy's Bedroom" class="myImg">
+                    <a href="/assets/children_bedroom_2/01.jpg" class="glightbox" data-gallery="bedroom_2">
+                        <img src="/assets/children_bedroom_2/01.jpg" alt="Boy's Bedroom" class="myImg" loading="lazy">
                     </a>
                     <h4>Boy's Bedroom / Navy Blue</h4>
-                    <p>This cosy room is designed to suit the hobbies of a teenage boy. Despite its modest size it accommodates 
-                        a desk and a chair for studies as well as a wardrobe. The shelf  provides space for books and board games, 
-                        and a second chair offers extra seating. The cooler wall colour is complimented by the terracotta decor tones. 
+                    <p>This cosy room is designed to suit the hobbies of a teenage boy. Despite its modest size it accommodates
+                        a desk and a chair for studies as well as a wardrobe. The shelf  provides space for books and board games,
+                        and a second chair offers extra seating. The cooler wall colour is complimented by the terracotta decor tones.
                     </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>                    
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
                     <div>
-                        <div style="display: none;">
-                            <a href="/assets/children_bedroom_2/02.jpg" data-lightbox="bedroom_2" data-title="After">
-                                <img src="/assets/children_bedroom_2/02.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/03.jpg" data-lightbox="bedroom_2" data-title="Before">
-                                <img src="/assets/children_bedroom_2/03.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/04.jpg" data-lightbox="bedroom_2" data-title="After">
-                                <img src="/assets/children_bedroom_2/04.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/05.jpg" data-lightbox="bedroom_2" data-title="Before">
-                                <img src="/assets/children_bedroom_2/05.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/06.jpg" data-lightbox="bedroom_2" data-title="After">
-                                <img src="/assets/children_bedroom_2/06.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/07.jpg" data-lightbox="bedroom_2" data-title="Before">
-                                <img src="/assets/children_bedroom_2/07.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/08.jpg" data-lightbox="bedroom_2" data-title="">
-                                <img src="/assets/children_bedroom_2/08.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/09.jpg" data-lightbox="bedroom_2" data-title="">
-                                <img src="/assets/children_bedroom_2/09.jpg" alt="Boy's Bedroom">
-                            </a>
-                            <a href="/assets/children_bedroom_2/10.jpg" data-lightbox="bedroom_2" data-title="">
-                                <img src="/assets/children_bedroom_2/10.jpg" alt="Boy's Bedroom">
-                            </a>
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/children_bedroom_2/02.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_2/03.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_2/04.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_2/05.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_2/06.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: After"></a>
+                            <a href="/assets/children_bedroom_2/07.jpg" class="glightbox" data-gallery="bedroom_2" data-glightbox="title: Before"></a>
+                            <a href="/assets/children_bedroom_2/08.jpg" class="glightbox" data-gallery="bedroom_2"></a>
+                            <a href="/assets/children_bedroom_2/09.jpg" class="glightbox" data-gallery="bedroom_2"></a>
+                            <a href="/assets/children_bedroom_2/10.jpg" class="glightbox" data-gallery="bedroom_2"></a>
                         </div>
-                    </div>                                            
+                    </div>
                 </div>
 
                 <div class="column">
-                    <a href="/assets/master_bathroom/01.jpg" data-lightbox="master_bathroom" data-title="">
-                        <img src="/assets/master_bathroom/01.jpg" alt="Master Bathroom" class="myImg">
+                    <a href="/assets/master_bathroom/01.jpg" class="glightbox" data-gallery="master_bathroom">
+                        <img src="/assets/master_bathroom/01.jpg" alt="Master Bathroom" class="myImg" loading="lazy">
                     </a>
                     <h4>Master Bathroom / Black&White</h4>
-                    <p>This sleek minimal room benefits from a black and white photograph that gives the space a personal touch. 
+                    <p>This sleek minimal room benefits from a black and white photograph that gives the space a personal touch.
                         Organic shapes of dried flowers in a textural vase are a counterpoint to the geometric lines of the walls.
                     </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>                    
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
                     <div>
-                        <div style="display: none;">
-                            <a href="/assets/master_bathroom/02.jpg" data-lightbox="master_bathroom" data-title="After">
-                                <img src="/assets/master_bathroom/02.jpg" alt="Master Bathroom">
-                            </a>
-                            <a href="/assets/master_bathroom/03.jpg" data-lightbox="master_bathroom" data-title="Before">
-                                <img src="/assets/master_bathroom/03.jpg" alt="Master Bathroom">
-                            </a>
-                            <a href="/assets/master_bathroom/04.jpg" data-lightbox="master_bathroom" data-title="Before">
-                                <img src="/assets/master_bathroom/04.jpg" alt="Master Bathroom">
-                            </a>
-                            <a href="/assets/master_bathroom/05.jpg" data-lightbox="master_bathroom" data-title="">
-                                <img src="/assets/master_bathroom/05.jpg" alt="Master Bathroom">
-                            </a>
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/master_bathroom/02.jpg" class="glightbox" data-gallery="master_bathroom" data-glightbox="title: After"></a>
+                            <a href="/assets/master_bathroom/03.jpg" class="glightbox" data-gallery="master_bathroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bathroom/04.jpg" class="glightbox" data-gallery="master_bathroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/master_bathroom/05.jpg" class="glightbox" data-gallery="master_bathroom"></a>
                         </div>
-                    </div>                                            
+                    </div>
                 </div>
 
                 <div class="column">
-                    <a href="/assets/guest_bathroom/01.jpg" data-lightbox="guest_bathroom" data-title="">
-                        <img src="/assets/guest_bathroom/01.jpg" alt="Guest Bathroom" class="myImg">
+                    <a href="/assets/guest_bathroom/01.jpg" class="glightbox" data-gallery="guest_bathroom">
+                        <img src="/assets/guest_bathroom/01.jpg" alt="Guest Bathroom" class="myImg" loading="lazy">
                     </a>
                     <h4>Guest Bathroom / Blue&Gold</h4>
-                    <p>Even the guest bathroom has a wow-factor. Adding bold saturated horizontal colour around the room creates 
-                        a luxurious atmosphere and makes the proportions seem more pleasing.  The candle sconce, art print and 
+                    <p>Even the guest bathroom has a wow-factor. Adding bold saturated horizontal colour around the room creates
+                        a luxurious atmosphere and makes the proportions seem more pleasing.  The candle sconce, art print and
                         accessories lend elegance and make the room feel special.
                     </p>
-                    <p style="font-weight: bold; color: #333333">Please see “before” and “after” photographs in the gallery above.</p>                    
+                    <p class="gallery-note">Please see "before" and "after" photographs in the gallery above.</p>
                     <div>
-                        <div style="display: none;">
-                            <a href="/assets/guest_bathroom/02.jpg" data-lightbox="guest_bathroom" data-title="After">
-                                <img src="/assets/guest_bathroom/02.jpg" alt="Guest Bathroom">
-                            </a>
-                            <a href="/assets/guest_bathroom/03.jpg" data-lightbox="guest_bathroom" data-title="Before">
-                                <img src="/assets/guest_bathroom/03.jpg" alt="Guest Bathroom">
-                            </a>
-                            <a href="/assets/guest_bathroom/04.jpg" data-lightbox="guest_bathroom" data-title="After">
-                                <img src="/assets/guest_bathroom/04.jpg" alt="Guest Bathroom">
-                            </a>
-                            <a href="/assets/guest_bathroom/05.jpg" data-lightbox="guest_bathroom" data-title="Before">
-                                <img src="/assets/guest_bathroom/05.jpg" alt="Guest Bathroom">
-                            </a>
-                            <a href="/assets/guest_bathroom/06.jpg" data-lightbox="guest_bathroom" data-title="">
-                                <img src="/assets/guest_bathroom/06.jpg" alt="Guest Bathroom">
-                            </a>
-                            <a href="/assets/guest_bathroom/07.jpg" data-lightbox="guest_bathroom" data-title="">
-                                <img src="/assets/guest_bathroom/07.jpg" alt="Guest Bathroom">
-                            </a>
+                        <div class="gallery-hidden-links">
+                            <a href="/assets/guest_bathroom/02.jpg" class="glightbox" data-gallery="guest_bathroom" data-glightbox="title: After"></a>
+                            <a href="/assets/guest_bathroom/03.jpg" class="glightbox" data-gallery="guest_bathroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/guest_bathroom/04.jpg" class="glightbox" data-gallery="guest_bathroom" data-glightbox="title: After"></a>
+                            <a href="/assets/guest_bathroom/05.jpg" class="glightbox" data-gallery="guest_bathroom" data-glightbox="title: Before"></a>
+                            <a href="/assets/guest_bathroom/06.jpg" class="glightbox" data-gallery="guest_bathroom"></a>
+                            <a href="/assets/guest_bathroom/07.jpg" class="glightbox" data-gallery="guest_bathroom"></a>
                         </div>
-                    </div>                        
-                </div>                                        
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -408,25 +292,25 @@
             <header class="section-header">
                 <h2>Let's get in touch</h2>
             </header>
-            <div class="container-contact">           
+            <div class="container-contact">
                 <p>Please use the form below to contact me</p>
                 <div class="callback-form">
                     <form name="contact" method="POST" data-netlify="true">
                         <div class="form-group">
                             <label for="name">Name*</label>
-                            <input type="text" name="name" minlength="2" maxlength="30" required>
+                            <input type="text" id="name" name="name" minlength="2" maxlength="30" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email*</label>
-                            <input type="email" name="email" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message*</label>
-                            <textarea name="message" minlength="2" maxlength="3000" required></textarea>
+                            <textarea id="message" name="message" minlength="2" maxlength="3000" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Send</button>
-                    </form>                    
-                </div>                    
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -435,46 +319,36 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="logo-footer">
-                <img src="/assets/logo.name.svg">
+                <img src="/assets/logo.name.svg" alt="Katja Karling" loading="lazy">
             </div>
             <p class="footer-email">
-                <a href="mailto:monogram.mail@gmail.com" target="_blank">monogram.mail@gmail.com</a>
+                <a href="mailto:monogram.mail@gmail.com" target="_blank" rel="noopener noreferrer">monogram.mail@gmail.com</a>
             </p>
             <div class="social">
                 <h4>Follow me</h4>
                 <div class="wrapper-social-icon">
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/katja_karling/" target="_blank">
-                                <img src="/assets/instagram.svg" class="icon">
+                            <a href="https://www.instagram.com/katja_karling/" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/instagram.svg" class="icon" alt="Instagram" loading="lazy">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/katja.karling" target="_blank">
-                                <img src="assets/square-facebook.svg" class="icon">
+                            <a href="https://www.facebook.com/katja.karling" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/square-facebook.svg" class="icon" alt="Facebook" loading="lazy">
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>© 2023 Monogram studio, All Rights Reserved</p>
-                <p class="developer">| website created by Inna Dyachkova</p>            
-            </div>            
+                <p>&copy; 2026 Monogram studio, All Rights Reserved</p>
+                <p class="developer">| website created by Inna Dyachkova</p>
+            </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="js/lightbox.js"></script>
-    <!-- <script src="js/lightbox.min.js"></script> -->
-    <script>
-        lightbox.option({
-          'fadeDuration': 200,
-          'resizeDuration': 350,
-          'imageFadeDuration': 200,
-          'wrapAround': false
-        })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
