@@ -170,7 +170,7 @@ img {
 nav .container-list {
     display: flex;
     justify-content: center;
-    width: 35vw;
+    width: 45vw;
 }
 
 nav .container-list ul {
@@ -210,11 +210,9 @@ nav .container-list ul li.active {
 
 .navbar-down .menu .line {
     display: flex;
-    width: 45vw;
+    flex: 1;
     border: .85px solid var(--color-line);
     box-shadow: 1px 2px 5px var(--color-line-shadow);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* About */
@@ -241,7 +239,7 @@ nav .container-list ul li.active {
 
 .flex-grid .column-2 {
     flex: 40%;
-    max-width: 30%;
+    max-width: 42%;
 }
 
 /* Previos work */
@@ -272,6 +270,86 @@ nav .container-list ul li.active {
 .gallery-note {
     font-weight: bold;
     color: var(--color-text);
+}
+
+/* Books */
+.books {
+    margin: 0 20px;
+    padding: 10px 0 50px;
+}
+
+.books-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 24px 0;
+}
+
+.book-card {
+    display: flex;
+    max-width: 68%;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.book-cover {
+    flex: 0 0 220px;
+    max-width: 220px;
+}
+
+.book-cover img {
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(40, 50, 56, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(40, 50, 56, 0.18);
+}
+
+.book-info {
+    flex: 1;
+    padding-top: 4px;
+}
+
+.book-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.book-meta {
+    font-size: 14px !important;
+    color: var(--color-secondary);
+    letter-spacing: 0.02em;
+    margin-bottom: 14px !important;
+    line-height: 1.4 !important;
+}
+
+.book-info p {
+    margin-bottom: 10px;
+}
+
+.book-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 32px;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-primary) !important;
+    border: 1.5px solid var(--color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
 }
 
 /* Contact */
@@ -440,6 +518,10 @@ nav .container-list ul li.active {
         font-size: 18px;
     }
 
+    .book-card {
+        max-width: 80%;
+    }
+
     .contact .callback-form form label {
         font-size: 14px;
     }
@@ -533,6 +615,20 @@ nav .container-list ul li.active {
         justify-content: space-between;
     }
 
+    .book-card {
+        max-width: 90%;
+        gap: 28px;
+    }
+
+    .book-cover {
+        flex: 0 0 180px;
+        max-width: 180px;
+    }
+
+    .book-info h3 {
+        font-size: 16px;
+    }
+
     .contact .container-contact p {
         font-size: 18px;
     }
@@ -597,6 +693,20 @@ nav .container-list ul li.active {
 
     li.navbar-icon.contact-link a img {
         width: 22px;
+    }
+
+    .book-card {
+        max-width: 92%;
+        gap: 24px;
+    }
+
+    .book-cover {
+        flex: 0 0 160px;
+        max-width: 160px;
+    }
+
+    .books-grid {
+        gap: 36px;
     }
 
     .contact .container-contact p {
@@ -828,6 +938,52 @@ nav .container-list ul li.active {
 
     #portfolio .section-header {
         margin-bottom: 10px;
+    }
+
+    /* Books */
+    .books {
+        padding-top: 0 !important;
+    }
+
+    .books .section-header {
+        margin-bottom: 10px;
+    }
+
+    .books-grid {
+        gap: 40px;
+        padding: 10px 0;
+    }
+
+    .book-card {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .book-cover {
+        flex: 0 0 auto;
+        max-width: 200px;
+    }
+
+    .book-info {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .book-info p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--color-text-dark);
+    }
+
+    .book-info h3 {
+        font-size: 16px;
+        color: var(--color-text-dark);
+    }
+
+    .book-link {
+        padding: 10px 36px;
     }
 
     /* Contact */
