@@ -608,13 +608,13 @@ nav .container-list ul li.active {
 
     #about.flex-grid .column-1 {
         flex: 50%;
-        max-width: 60%;
+        max-width: 45%;
         margin-right: 20px;
     }
 
     #about.flex-grid .column-2 {
         flex: 50%;
-        max-width: 40%;
+        max-width: 45%;
     }
 
     #portfolio.flex-grid .row {
@@ -707,6 +707,18 @@ nav .container-list ul li.active {
 
     li.navbar-icon.contact-link a img {
         width: 22px;
+    }
+
+    #about.flex-grid .column-1,
+    #about.flex-grid .column-2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #about.flex-grid .column-1 {
+        max-width: 60%;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     .book-card {
