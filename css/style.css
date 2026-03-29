@@ -997,6 +997,7 @@ nav .container-list ul li.active {
     }
 
     .book-link {
+        align-self: center;
         padding: 10px 36px;
     }
 
