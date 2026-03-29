@@ -337,6 +337,12 @@ nav .container-list ul li.active {
     margin-bottom: 8px;
 }
 
+.book-subtitle {
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+}
+
 .book-meta {
     font-size: 14px !important;
     color: var(--color-secondary);
