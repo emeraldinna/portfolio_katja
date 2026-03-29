@@ -250,6 +250,7 @@ nav .container-list ul li.active {
 .column-2 a {
     font-size: inherit;
     color: inherit;
+    font-weight: 600;
 }
 
 /* Previos work */
