@@ -224,12 +224,13 @@ nav .container-list ul li.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 30px 0;
 }
 
 .flex-grid .column-1 {
     flex: 60%;
-    max-width: 42%;
+    max-width: 44%;
     margin-right: 40px;
 }
 
@@ -240,6 +241,14 @@ nav .container-list ul li.active {
 .flex-grid .column-2 {
     flex: 40%;
     max-width: 42%;
+}
+
+.column-2 p {
+    margin-bottom: 0.6em;
+}
+
+.column-2 a {
+    font-size: inherit;
 }
 
 /* Previos work */
@@ -290,7 +299,7 @@ nav .container-list ul li.active {
     display: flex;
     max-width: 68%;
     gap: 40px;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .book-cover {
@@ -299,6 +308,7 @@ nav .container-list ul li.active {
 }
 
 .book-cover img {
+    display: block;
     border-radius: 4px;
     box-shadow: 0 4px 24px rgba(40, 50, 56, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -311,8 +321,10 @@ nav .container-list ul li.active {
 
 .book-info {
     flex: 1;
-    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .book-info h3 {
     font-size: 18px;
@@ -337,7 +349,8 @@ nav .container-list ul li.active {
 
 .book-link {
     display: inline-block;
-    margin-top: 10px;
+    align-self: flex-start;
+    margin-top: auto;
     padding: 10px 32px;
     font-size: 14px !important;
     text-transform: uppercase;
